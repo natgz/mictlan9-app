@@ -38,7 +38,7 @@ export const VideoBg = styled.video`
 `;
 
 export const HeroContent = styled.div`
-  z-index: 2;
+  z-index: 3;
   max-width: 1200px;
   position: relative;
   padding: 8px 24px;
