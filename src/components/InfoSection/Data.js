@@ -11,7 +11,7 @@ export const homeObjOne = {
   // cambiar el posicionamiento de la info de las columnas
   imgStart: true,
   //  true o false
-  img: require("../../images/img1.jpeg"),
+  // img: require("/images/img1.jpeg"),
   alt: "Bottle",
   dark: true,
   primary: true,
@@ -30,7 +30,7 @@ export const homeObjTwo = {
   // cambiar el posicionamiento de la info de las columnas
   imgStart: false,
   //  true o false
-  img: require("../../images/img2.jpeg"),
+  // img: require("../../images/img2.jpeg"),
   alt: "otro",
   dark: false,
   primary: false,
@@ -49,7 +49,7 @@ export const homeObjThree = {
   // cambiar el posicionamiento de la info de las columnas
   imgStart: false,
   //  true o false
-  img: require("../../images/img3.jpeg"),
+  // img: require("../../images/img3.jpeg"),
   alt: "Bottle",
   dark: false,
   primary: false,
