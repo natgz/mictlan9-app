@@ -18,9 +18,9 @@ export const HeroContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(180deg, rgba(240, 6, 6, 0.733) 0%, rgba(25, 219, 35, 0.6) 100%),
-      linear-gradient(180deg, rgba(209, 17, 161, 0.2) 0%, transparent 100%);
-    z-index: 3;
+    /* background-image: linear-gradient(180deg, rgba(240, 6, 6, 0.733) 0%, rgba(25, 219, 35, 0.6) 100%),
+      linear-gradient(180deg, rgba(209, 17, 161, 0.2) 0%, transparent 100%); */
+    z-index: 2;
   }
 `
 
@@ -43,7 +43,7 @@ export const VideoBg = styled.video`
   background: #232a3494;
 `
 export const HeroContent = styled.div`
-  z-index: 2;
+  z-index: 3;
   max-width: 1200px;
   position: absolute;
   padding: 8px 24px;

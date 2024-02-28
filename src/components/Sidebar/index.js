@@ -9,6 +9,7 @@ import {
   SideBtnWrap,
   SidebarRoute
 } from "./SidebarElements"
+import Link from 'next/link'
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -19,20 +20,20 @@ const Sidebar = ({ isOpen, toggle }) => {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="about" onClick={toggle}>
-            About
+          <Link href="#about">Nosotros</Link>
           </SidebarLink>
           <SidebarLink to="discover" onClick={toggle}>
-            Discover
+          <Link href="#discover">Tienda</Link>
           </SidebarLink>
           <SidebarLink to="services" onClick={toggle}>
-            Services
+          <Link href="#services">Blogs & Recetas</Link>
           </SidebarLink>
           <SidebarLink to="signup" onClick={toggle}>
-            Sign Up
+          <Link href="#location">Ubicaciones</Link>
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/signin">Sign In</SidebarRoute>
+          <SidebarRoute to="/signin">Iniciar sesión</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

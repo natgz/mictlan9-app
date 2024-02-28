@@ -40,6 +40,7 @@ export const NavLogo = styled.div`
   font-weight: bold;
   text-decoration: none;
 `
+
 export const MobileIcon = styled.div`
   display: none;
 
@@ -84,6 +85,7 @@ export const NavLinks = styled.div`
     border-bottom: 3px solid #ea9d43;
   }
 `
+
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
