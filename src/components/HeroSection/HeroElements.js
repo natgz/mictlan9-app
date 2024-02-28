@@ -1,28 +1,15 @@
-import styled from "styled-components"
-import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md"
+import styled from 'styled-components';
+import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 
 export const HeroContainer = styled.div`
-  background: #0c0c0c4c;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
-
-  :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(180deg, rgba(240, 6, 6, 0.733) 0%, rgba(25, 219, 35, 0.6) 100%),
-      linear-gradient(180deg, rgba(209, 17, 161, 0.2) 0%, transparent 100%);
-    z-index: 3;
-  }
-`
+`;
 
 export const HeroBg = styled.div`
   position: absolute;
@@ -33,24 +20,33 @@ export const HeroBg = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-`
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.79) 100%,
+    rgba(204, 204, 204, 0.23) 100%
+  );
+`;
 
 export const VideoBg = styled.video`
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
-  background: #232a3494;
-`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+`;
+
 export const HeroContent = styled.div`
   z-index: 2;
   max-width: 1200px;
-  position: absolute;
+  position: relative;
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
+
 export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 135px;
@@ -63,7 +59,8 @@ export const HeroH1 = styled.h1`
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
-`
+`;
+
 export const HeroH2 = styled.h2`
   color: #fff;
   font-size: 68px;
@@ -76,7 +73,7 @@ export const HeroH2 = styled.h2`
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
-`
+`;
 
 export const HeroP = styled.p`
   margin-top: 24px;
@@ -91,20 +88,21 @@ export const HeroP = styled.p`
   @media screen and (max-width: 480px) {
     font-size: 18px;
   }
-`
+`;
 
 export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
   font-size: 20px;
-`
+`;
+
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
-`
+`;
