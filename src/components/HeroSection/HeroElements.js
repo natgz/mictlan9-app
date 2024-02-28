@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md"
 
 export const HeroContainer = styled.div`
-  background: #0c0c0c;
+  background: #0c0c0c4c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,9 +18,9 @@ export const HeroContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%); */
-    z-index: 2;
+    background-image: linear-gradient(180deg, rgba(240, 6, 6, 0.733) 0%, rgba(25, 219, 35, 0.6) 100%),
+      linear-gradient(180deg, rgba(209, 17, 161, 0.2) 0%, transparent 100%);
+    z-index: 3;
   }
 `
 
@@ -40,10 +40,10 @@ export const VideoBg = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #232a34;
+  background: #232a3494;
 `
 export const HeroContent = styled.div`
-  z-index: 3;
+  z-index: 2;
   max-width: 1200px;
   position: absolute;
   padding: 8px 24px;
