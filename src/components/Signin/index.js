@@ -17,7 +17,7 @@ function SignIn() {
     <>
       <Container>
         <FormWrap>
-          <Icon to="/">CAPRA</Icon>
+          <Icon to="/">MICTLÁN9</Icon>
           <FormContent>
             <Form action="#">
               <FormH1>Iniciar sesion en tú cuenta</FormH1>

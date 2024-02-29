@@ -1,18 +1,7 @@
 import React, { useState } from "react"
-// import Video from "../../videos/bar-video.mp4"
 import { Button } from "../ButtonElements"
-import {
-  HeroContainer,
-  HeroBg,
-  VideoBg,
-  HeroContent,
-  HeroH1,
-  HeroH2,
-  HeroP,
-  HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight
-} from "./HeroElements"
+import './HeroElements.css'
+import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 
 function HeroSection() {
   const [hover, setHover] = useState(false)
@@ -22,15 +11,15 @@ function HeroSection() {
   }
 
   return (
-    <HeroContainer id="home">
-      <HeroBg>
-        <VideoBg autoPlay loop muted src="/videos/bar-video.mp4" type="video/mp4" />
-      </HeroBg>
-      <HeroContent>
-        <HeroH1>CAPRA</HeroH1>
-        <HeroH2>WINE BARREL AGED COFFEE</HeroH2>
-        <HeroP>Start your day like the G.O.A.T.</HeroP>
-        <HeroBtnWrapper>
+    <div className="HeroContainer" id="home">
+      <div className="HeroBg">
+        <video className="VideoBg" autoPlay loop muted src="/videos/bar-video.mp4" type="video/mp4" />
+      </div>
+      <div className="HeroContent">
+        <h1 className="HeroH1">MICTLÁN9</h1>
+        <h2 className="HeroH2">Próximamente</h2>
+        <p className="HeroP">Sumérgete en la magia de Mitlán: donde cada trago es un viaje místico.</p>
+        <div className="HeroBtnWrapper">
           <Button
             to="signup"
             onMouseEnter={onHover}
@@ -43,11 +32,11 @@ function HeroSection() {
             exact="true"
             offset={-80}
           >
-            Inicia {hover ? <ArrowForward /> : <ArrowRight />}
+            Inicia {hover ? <MdArrowForward className="ArrowForward"/> : <MdKeyboardArrowRight className="ArrowRight"/>}
           </Button>
-        </HeroBtnWrapper>
-      </HeroContent>
-    </HeroContainer>
+        </div>
+      </div>
+    </div>
   )
 }
 

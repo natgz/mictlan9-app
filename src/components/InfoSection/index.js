@@ -1,20 +1,6 @@
 import React from "react"
 import { Button } from "../ButtonElements"
-
-import {
-  InfoContainer,
-  InfoWrapper,
-  InfoRow,
-  Column1,
-  Column2,
-  TextWrapper,
-  TopLine,
-  Heading,
-  Subtitle,
-  BtnWrap,
-  ImgWrap,
-  Img
-} from "./InfoElements"
+import './InfoElements.css'
 
 const InfoSection = ({
   lightBg,
@@ -34,15 +20,15 @@ const InfoSection = ({
 }) => {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
-        <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
-            <Column1>
-              <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
+      <div className="InfoContainer" lightBg={lightBg} id={id}>
+        <div className="InfoWrapper">
+          <div className="InfoRow" imgStart={imgStart}>
+            <div className="Column1">
+              <div className="TextWrapper">
+                <p className="TopLine">{topLine}</p>
+                <h1 className="Heading" lightText={lightText}>{headline}</h1>
+                <p className="Subtitle" darkText={darkText}>{description}</p>
+                <div className="BtnWrap">
                   <Button
                     to="home"
                     smooth={true}
@@ -56,17 +42,17 @@ const InfoSection = ({
                   >
                     {buttonLabel}
                   </Button>
-                </BtnWrap>
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <ImgWrap>
-                <Img src={img} alt={alt} />
-              </ImgWrap>
-            </Column2>
-          </InfoRow>
-        </InfoWrapper>
-      </InfoContainer>
+                </div>
+              </div>
+            </div>
+            <div className="Column2">
+              <div className="ImgWrap">
+                <img className="Img" src={img} alt={alt} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

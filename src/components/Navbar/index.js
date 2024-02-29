@@ -4,18 +4,8 @@ import React, { useEffect, useState } from "react"
 import { FaBars } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
 import { animateScroll as scroll } from "react-scroll"
-import {
-  Nav,
-  NavbarContainer,
-  NavLogo,
-  MobileIcon,
-  NavMenu,
-  NavItem,
-  NavLinks,
-  NavBtn,
-  NavBtnLink
-} from "./NavbarElements"
 import Link from 'next/link'
+import './NavbarElements.css'
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(true)
@@ -39,41 +29,41 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <Nav scrollNav={scrollNav}>
-          <NavbarContainer>
-            <NavLogo class="logo" to="/" onClick={toggleHome}>
-              CAPRA
-            </NavLogo>
-            <MobileIcon onClick={toggle}>
+        <nav class="Nav" scrollNav={scrollNav}>
+          <div class="NavbarContainer">
+            <div className="NavLogo" class="logo" to="/" onClick={toggleHome}>
+              MICTLÁN9
+            </div>
+            <div className="MobileIcon" onClick={toggle}>
               <FaBars />
-            </MobileIcon>
-            <NavMenu>
-              <NavItem>
-                <NavLinks to="about" smooth={true} duration={500} spy={true} exact="true" offset={-80} activeClass="active">
+            </div>
+            <ul className="NavMenu">
+              <li className="NavItem">
+                <div className="NavLinks" >
                 <Link href="#about">Nosotros</Link>
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="discover" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
+                </div>
+              </li>
+              <li className="NavItem">
+                <div className="NavLinks" to="discover" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
                   <Link href="#discover">Tienda</Link>
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="services" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
+                </div>
+              </li>
+              <li className="NavItem">
+                <div className="NavLinks" to="services" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
                 <Link href="#services">Blogs & Recetas</Link>
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="location" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
+                </div>
+              </li>
+              <li className="NavItem">
+                <div className="NavLinks" to="location" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
                 <Link href="#location">Ubicaciones</Link>
-                </NavLinks>
-              </NavItem>
-            </NavMenu>
-            <NavBtn>
-              <NavBtnLink to="/signin">Iniciar sesión</NavBtnLink>
-            </NavBtn>
-          </NavbarContainer>
-        </Nav>
+                </div>
+              </li>
+            </ul>
+            <nav className="NavBtn">
+              <div className="NavBtnLink" to="/signin">Iniciar sesión</div>
+            </nav>
+          </div>
+        </nav>
       </IconContext.Provider>
     </>
   )

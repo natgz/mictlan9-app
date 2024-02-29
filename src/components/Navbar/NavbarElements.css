@@ -1,9 +1,6 @@
-import styled from "styled-components"
-// import { Link as LinkS } from "react-scroll"
-// import { Link as LinkR } from "next/link"
 
-export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
+.Nav {
+  /* background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")}; */
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -17,9 +14,9 @@ export const Nav = styled.nav`
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
-`
+}
 
-export const NavbarContainer = styled.div`
+.NavbarContainer {
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -27,9 +24,9 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
-`
+}
 
-export const NavLogo = styled.div`
+.NavLogo {
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
@@ -39,9 +36,9 @@ export const NavLogo = styled.div`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
-`
+}
 
-export const MobileIcon = styled.div`
+.MobileIcon {
   display: none;
 
   @media screen and (max-width: 760px) {
@@ -54,9 +51,9 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     color: #fff;
   }
-`
+}
 
-export const NavMenu = styled.ul`
+.NavMenu {
   display: flex;
   align-items: center;
   list-style: none;
@@ -66,13 +63,13 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 768px) {
     display: none;
   }
-`
+}
 
-export const NavItem = styled.li`
+.NavItem {
   height: 80px;
-`
+}
 
-export const NavLinks = styled.div`
+.NavLinks {
   color: #fff;
   display: flex;
   align-items: center;
@@ -84,18 +81,18 @@ export const NavLinks = styled.div`
   &.active {
     border-bottom: 3px solid #ea9d43;
   }
-`
+}
 
-export const NavBtn = styled.nav`
+.NavBtn {
   display: flex;
   align-items: center;
 
   @media screen and (max-width: 760px) {
     display: none;
   }
-`
+}
 
-export const NavBtnLink = styled.div`
+.NavBtnLink {
   border-radius: 50px;
   background: #ea9d43;
   white-space: nowrap;
@@ -113,4 +110,4 @@ export const NavBtnLink = styled.div`
     background: #fff;
     color: #010606;
   }
-`
+}

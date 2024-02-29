@@ -1,21 +1,7 @@
 import React from "react"
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
 import { animateScroll as scroll } from "react-scroll"
-import {
-  FooterContainer,
-  FooterWrap,
-  FooterLinksContainer,
-  FooterLinksWrapper,
-  FooterLinkItems,
-  FooterLinkTitle,
-  FooterLink,
-  SocialMedia,
-  SocialMediaWrap,
-  SocialLogo,
-  WebsiteRights,
-  SocialIcons,
-  SocialIconLink
-} from "./FooterElements"
+import "./FooterElements.css"
 
 const Footer = () => {
   const toggleHome = () => {
@@ -23,66 +9,58 @@ const Footer = () => {
   }
 
   return (
-    <FooterContainer>
-      <FooterWrap>
-        <FooterLinksContainer>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/signin">How it works</FooterLink>
-              <FooterLink to="/signin">Testimonials</FooterLink>
-              <FooterLink to="/signin">Careers</FooterLink>
-              <FooterLink to="/signin">Investors</FooterLink>
-              <FooterLink to="/signin">Terms of Services</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Contact Us</FooterLinkTitle>
-              <FooterLink to="/">Contact</FooterLink>
-              <FooterLink to="/">Support</FooterLink>
-              <FooterLink to="/">Destinations</FooterLink>
-              <FooterLink to="/">Sponsorships</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>Social Media</FooterLinkTitle>
-              <FooterLink to="https://www.instagram.com/capracoffeemx/">Instagram</FooterLink>
-              <FooterLink to="https://www.facebook.com/capracoffeemx">Facebook</FooterLink>
-              <FooterLink to="https://www.linkedin.com/company/capracoffeemx/">LinkedIn</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-        </FooterLinksContainer>
-        <SocialMedia>
-          <SocialMediaWrap>
-            <SocialLogo to="/" onClick={toggleHome}>
-              CAPRA
-            </SocialLogo>
-            <WebsiteRights>
+    <footer className="FooterContainer">
+      <div className="FooterWrap">
+        <div className="FooterLinksContainer">
+          <div className="FooterLinksWrapper">
+            <div className="FooterLinkItems">
+              <h1 className="FooterLinkTitle">About Us</h1>
+              <div className="FooterLink" to="/signin">How it works</div>
+              <div className="FooterLink" to="/signin">Testimonials</div>
+              <div className="FooterLink" to="/signin">Careers</div>
+              <div className="FooterLink" to="/signin">Investors</div>
+              <div className="FooterLink" to="/signin">Terms of Services</div>
+            </div>
+            <div className="FooterLinkItems">
+              <h1 className="FooterLinkTitle">Contact Us</h1>
+              <div className="FooterLink" to="/">Contact</div>
+              <div className="FooterLink" to="/">Support</div>
+              <div className="FooterLink" to="/">Destinations</div>
+              <div className="FooterLink" to="/">Sponsorships</div>
+            </div>
+          </div>
+          <div className="FooterLinksWrapper">
+            <div className="FooterLinkItems">
+              <h1 className="FooterLinkTitle">Social Media</h1>
+              <div className="FooterLink" to="https://www.facebook.com/mictlan9lafe/">Instagram</div>
+              <div className="FooterLink" to="#">Facebook</div>
+            </div>
+          </div>
+        </div>
+        <section className="SocialMedia">
+          <div className="SocialMediaWrap">
+            <div className="SocialLogo" to="/" onClick={toggleHome}>
+              MICTLÁN9
+            </div>
+            <small className="WebsiteRights">
               Copyright &copy;
               <a href="/" className="text-muted">
-                {new Date().getFullYear()} CapraCoffee. All rights reserved.
+                {new Date().getFullYear()} MICTLÁN9. All rights reserved.
               </a>
-            </WebsiteRights>
-            <SocialIcons>
+            </small>
+            <div className="SocialIcons">
               {/* poner los links */}
-              <SocialIconLink href="https://www.facebook.com/capracoffeemx" target="_blank" aria-label="Facebook">
+              <a className="SocialIconLink" href="https://www.facebook.com/mictlan9lafe/" target="_blank" aria-label="Facebook">
                 <FaFacebook />
-              </SocialIconLink>
-              <SocialIconLink href="https://www.instagram.com/capracoffeemx/" target="_blank" aria-label="Instagram">
+              </a>
+              <a className="SocialIconLink" href="#" target="_blank" aria-label="Instagram">
                 <FaInstagram />
-              </SocialIconLink>
-              <SocialIconLink
-                href="https://www.linkedin.com/company/capracoffeemx/"
-                target="_blank"
-                aria-label="Linkedin"
-              >
-                <FaLinkedin />
-              </SocialIconLink>
-            </SocialIcons>
-          </SocialMediaWrap>
-        </SocialMedia>
-      </FooterWrap>
-    </FooterContainer>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
   )
 }
 

@@ -1,7 +1,5 @@
-import styled from "styled-components"
-import { FaTimes } from "react-icons/fa"
 
-export const SidebarContainer = styled.aside`
+.SidebarContainer {
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -12,15 +10,20 @@ export const SidebarContainer = styled.aside`
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-`
+  /* opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")}; */
+  /* top: ${({ isOpen }) => (isOpen ? "0" : "-100%")}; */
+}
 
-export const CloseIcon = styled(FaTimes)`
+.containeropen {
+  opacity: 100%;
+  top: 0;
+}
+
+.CloseIcon {
   color: #fff;
-`
+}
 
-export const Icon = styled.div`
+.Icon {
   position: absolute;
   top: 1.2rem;
   right: 1.5rem;
@@ -28,12 +31,13 @@ export const Icon = styled.div`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
-`
-export const SidebarWrapper = styled.div`
-  color: #fff;
-`
+}
 
-export const SidebarMenu = styled.ul`
+.SidebarWrapper {
+  color: #fff;
+}
+
+.SidebarMenu {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
@@ -42,9 +46,9 @@ export const SidebarMenu = styled.ul`
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(6, 60px);
   }
-`
+}
 
-export const SidebarLink = styled.div`
+.SidebarLink {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,14 +64,14 @@ export const SidebarLink = styled.div`
     color: #ea9d43;
     transition: 0.2s ease-in-out;
   }
-`
+}
 
-export const SideBtnWrap = styled.div`
+.SideBtnWrap {
   display: flex;
   justify-content: center;
-`
+}
 
-export const SidebarRoute = styled.div`
+.SidebarRoute {
   border-radius: 50px;
   background: #ea9d43;
   white-space: nowrap;
@@ -85,4 +89,4 @@ export const SidebarRoute = styled.div`
     background: #fff;
     color: #010606;
   }
-`
+}
