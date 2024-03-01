@@ -12,11 +12,13 @@ import Services from "../components/Services"
 import Footer from "../components/Footer"
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState("closed");
 
   const toggle = () => {
-    setIsOpen(!isOpen)
-  }
+    console.log('toggle')
+    if (isOpen !== "closed") setIsOpen("closed");
+    else setIsOpen("open");
+  };
 
   return (
     <>

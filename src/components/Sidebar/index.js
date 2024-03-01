@@ -4,12 +4,12 @@ import './SidebarElements.css'
 import { FaTimes } from "react-icons/fa"
 
 const Sidebar = ({ isOpen, toggle }) => {
-  const containeropen = isOpen ? 'SidebarContainer containeropen' : 'SidebarContainer'
-  console.log(isOpen)
+  const containeropen = (isOpen == "closed") ? 'SidebarContainer containerclosed' : 'SidebarContainer'
+  console.log(isOpen, 'isOpen')
+  console.log(toggle, 'toggle')
   return (
     <div>
-    (isOpen ?
-      {/* <aside className={containeropen} onClick={toggle}>
+      <aside className={containeropen} onClick={toggle}>
         <div className="Icon" onClick={toggle}>
           <FaTimes className="CloseIcon"/>
         </div>
@@ -32,8 +32,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             <div className="SidebarRoute" to="/signin">Iniciar sesión</div>
           </div>
         </div>
-    </aside> */}
-   : '' )
+    </aside>
   </div>
   )
 }
