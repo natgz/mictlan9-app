@@ -1,6 +1,6 @@
 
 .Nav {
-  /* background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")}; */
+  background: transparent;
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -14,6 +14,10 @@
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
+}
+
+.ScrollNav {
+  background: #000;
 }
 
 .NavbarContainer {

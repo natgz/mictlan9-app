@@ -8,13 +8,13 @@ import Link from 'next/link'
 import './NavbarElements.css'
 
 const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(true)
+  const [scrollNav, setScrollNav] = useState("negrito")
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
-      setScrollNav(true)
+      setScrollNav("negrito")
     } else {
-      setScrollNav(false)
+      setScrollNav("transparente")
     }
   }
 
@@ -26,10 +26,12 @@ const Navbar = ({ toggle }) => {
     scroll.scrollToTop()
   }
 
+  const navbarBlack = (scrollNav == "negrito") ? 'Nav ScrollNav' : 'Nav'
+
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <nav class="Nav" scrollNav={scrollNav}>
+        <nav className={navbarBlack} scrollNav={scrollNav}>
           <div class="NavbarContainer">
             <div className="NavLogo" class="logo" to="/" onClick={toggleHome}>
               MICTLÁN9
