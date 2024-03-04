@@ -14,12 +14,12 @@ const Footer = () => {
         <div className="FooterLinksContainer">
           <div className="FooterLinksWrapper">
             <div className="FooterLinkItems">
-              <h1 className="FooterLinkTitle">About Us</h1>
-              <div className="FooterLink" to="/signin">How it works</div>
-              <div className="FooterLink" to="/signin">Testimonials</div>
-              <div className="FooterLink" to="/signin">Careers</div>
-              <div className="FooterLink" to="/signin">Investors</div>
-              <div className="FooterLink" to="/signin">Terms of Services</div>
+              <h1 className="FooterLinkTitle">Enlaces</h1>
+              <div className="FooterLink" to="/signin">Nosotros</div>
+              <div className="FooterLink" to="/signin">Menú</div>
+              <div className="FooterLink" to="/signin">Reservaciones</div>
+              <div className="FooterLink" to="/signin">Ubicación</div>
+              <div className="FooterLink" to="/signin">Contacto</div>
             </div>
             <div className="FooterLinkItems">
               <h1 className="FooterLinkTitle">Contact Us</h1>
@@ -29,13 +29,13 @@ const Footer = () => {
               <div className="FooterLink" to="/">Sponsorships</div>
             </div>
           </div>
-          <div className="FooterLinksWrapper">
+          {/* <div className="FooterLinksWrapper">
             <div className="FooterLinkItems">
               <h1 className="FooterLinkTitle">Social Media</h1>
               <div className="FooterLink" to="https://www.facebook.com/mictlan9lafe/">Instagram</div>
               <div className="FooterLink" to="#">Facebook</div>
             </div>
-          </div>
+          </div> */}
         </div>
         <section className="SocialMedia">
           <div className="SocialMediaWrap">

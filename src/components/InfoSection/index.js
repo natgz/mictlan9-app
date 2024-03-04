@@ -3,13 +3,13 @@ import { Button } from "../ButtonElements"
 import './InfoElements.css'
 
 const InfoSection = ({
-  lightBg,
+  theme,
+  heading,
+  text,
   id,
-  imgStart,
+  rows,
   topLine,
-  lightText,
   headline,
-  darkText,
   description,
   buttonLabel,
   img,
@@ -18,16 +18,18 @@ const InfoSection = ({
   dark,
   dark2
 }) => {
+
   return (
     <>
-      <div className="InfoContainer" lightBg={lightBg} id={id}>
+      <div className={theme} id={id}>
+        <div className="InfoContainer">
         <div className="InfoWrapper">
-          <div className="InfoRow" imgStart={imgStart}>
+          <div className={rows}>
             <div className="Column1">
               <div className="TextWrapper">
                 <p className="TopLine">{topLine}</p>
-                <h1 className="Heading" lightText={lightText}>{headline}</h1>
-                <p className="Subtitle" darkText={darkText}>{description}</p>
+                <h1 className={heading}>{headline}</h1>
+                <p className={text}>{description}</p>
                 <div className="BtnWrap">
                   <Button
                     to="home"
@@ -51,6 +53,7 @@ const InfoSection = ({
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </>

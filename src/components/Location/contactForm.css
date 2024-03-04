@@ -1,0 +1,15 @@
+/* contactForm.css */
+.contact-card {
+  width: auto;
+  max-width: 50rem;
+  text-align: center;
+  margin: auto;
+  padding: 0px;
+  background-color: #f0f8ff00;
+  font-size: 20px;
+}
+
+.submit-button {
+  width: 25%;
+  margin: auto;
+}

@@ -26,14 +26,43 @@ const Navbar = ({ toggle }) => {
     scroll.scrollToTop()
   }
 
+  const onClick = (e, a) => {
+    let element = document.getElementById(a);
+    e.preventDefault();
+    element &&
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+
+  const activeSection = () => {
+    const sections = document.querySelectorAll("InfoWrapper");
+    const navLi = document.querySelectorAll("div.NavbarContainer");
+    
+    window.onscroll = () => {
+      sections.forEach((sec) => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute("id");
+
+        if (top >= offset && top < offset + height) {
+          navLi.forEach(links => {
+            links.classList.remove("active");
+            document.querySelector("div.NavbarContainer").classList.add("active");
+          });
+        }
+      });
+    }
+  }
+
   const navbarBlack = (scrollNav == "negrito") ? 'Nav ScrollNav' : 'Nav'
+  
 
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <nav className={navbarBlack} scrollNav={scrollNav}>
-          <div class="NavbarContainer">
-            <div className="NavLogo" class="logo" to="/" onClick={toggleHome}>
+        <nav className={navbarBlack}>
+          <div className="NavbarContainer">
+            <div className="NavLogo" to="/" onClick={toggleHome}>
               MICTLÁN9
             </div>
             <div className="MobileIcon" onClick={toggle}>
@@ -41,28 +70,34 @@ const Navbar = ({ toggle }) => {
             </div>
             <ul className="NavMenu">
               <li className="NavItem">
-                <div className="NavLinks" >
-                <Link href="#about">Nosotros</Link>
+                <div className="NavLinks" onClick={(e) => onClick(e, "nosotros")}>
+                  Nosotros
                 </div>
               </li>
               <li className="NavItem">
-                <div className="NavLinks" to="discover" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
-                  <Link href="#discover">Tienda</Link>
+                <div className="NavLinks" onClick={(e) => onClick(e, "menu")}>
+                  Menú
+                    {/* platillos y mixologia */}
                 </div>
               </li>
               <li className="NavItem">
-                <div className="NavLinks" to="services" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
-                <Link href="#services">Blogs & Recetas</Link>
+                <div className="NavLinks" onClick={(e) => onClick(e, "reservaciones")}>
+                  Reservaciones
                 </div>
               </li>
               <li className="NavItem">
-                <div className="NavLinks" to="location" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
-                <Link href="#location">Ubicaciones</Link>
+                <div className="NavLinks" onClick={(e) => onClick(e, "ubicacion")}>
+                  Ubicación
+                </div>
+              </li>
+              <li className="NavItem">
+                <div className="NavLinks" onClick={(e) => onClick(e, "contacto")}>
+                  Contacto
                 </div>
               </li>
             </ul>
             <nav className="NavBtn">
-              <div className="NavBtnLink" to="/signin">Iniciar sesión</div>
+              <div className="NavBtnLink"><Link href="/calavera">Crea tu calavera</Link></div>
             </nav>
           </div>
         </nav>

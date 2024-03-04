@@ -32,7 +32,7 @@ function HeroSection() {
             exact="true"
             offset={-80}
           >
-            Inicia {hover ? <MdArrowForward className="ArrowForward"/> : <MdKeyboardArrowRight className="ArrowRight"/>}
+            Conócenos {hover ? <MdArrowForward className="ArrowForward"/> : <MdKeyboardArrowRight className="ArrowRight"/>}
           </Button>
         </div>
       </div>

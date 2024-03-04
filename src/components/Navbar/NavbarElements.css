@@ -27,7 +27,7 @@
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  /* max-width: 1100px; */
 }
 
 .NavLogo {
@@ -82,8 +82,9 @@
   height: 100%;
   cursor: pointer;
 
-  &.active {
-    border-bottom: 3px solid #ea9d43;
+  &:hover,
+  &.active{
+    color: rgb(149, 19, 255);
   }
 }
 
@@ -98,7 +99,7 @@
 
 .NavBtnLink {
   border-radius: 50px;
-  background: #ea9d43;
+  background: #FC01EF;
   white-space: nowrap;
   padding: 10px 22px;
   color: #010606;
