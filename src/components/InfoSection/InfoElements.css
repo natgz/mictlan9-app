@@ -28,10 +28,13 @@
 
 .headingLight {
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 58px;
   line-height: 1.1;
   font-weight: 600;
   color: #f7f8fa;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -56,6 +59,9 @@
   font-size: 18px;
   line-height: 24px;
   color: #fff;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .textDark {
@@ -64,6 +70,9 @@
   font-size: 18px;
   line-height: 24px;
   color: #010606;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -87,6 +96,17 @@
 
   @media screen and (max-width: 768px) {
     grid-template-areas: 'col1' 'col2';
+  }
+}
+
+.InfoRow2 {
+  display: grid;
+  grid-auto-columns: minmax(auto, 1fr);
+  align-items: center;
+  grid-template-areas: 'col1 col2';
+
+  @media screen and (max-width: 768px) {
+    grid-template-areas: 'col1 col1' 'col2 col2';
   }
 }
 
@@ -120,13 +140,16 @@
 }
 
 .TopLine {
-  color: #7ACF36;
+  color: #B983FF;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 

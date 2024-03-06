@@ -8,10 +8,9 @@ import Sidebar from "../components/Sidebar"
 import HeroSection from "../components/HeroSection"
 import InfoSection from "../components/InfoSection"
 import { Menu,Reservaciones,Nosotros,Historia,EquipoHumano,Contacto,Ubicacion } from "../components/InfoSection/Data"
-import Services from "../components/Services"
 import Footer from "../components/Footer"
 import { whatsapp } from "../components/InfoSection/Data"
-import Location from "../components/Location"
+import CardSlider from "../components/CardSlider"
 import  {
   Button,
 } from 'react-bootstrap'
@@ -31,9 +30,8 @@ export default function Home() {
       <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSection {...Nosotros} />
-      <Services />
+      <CardSlider />
       <InfoSection {...Reservaciones} />
-      {/* <Location /> */}
       {/* <InfoSection {...Ubicacion} /> */}
       <InfoSection {...Contacto} />
       <Footer />
