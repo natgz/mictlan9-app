@@ -1,0 +1,92 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.media {
+  max-width: 400px;
+  max-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+}
+
+.img-1 {
+  margin-top: 210px;
+  
+}
+
+.img-2 {
+  margin-bottom: 210px;
+}
+
+.layer-1 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.layer-2 {
+  position: absolute;
+  margin-bottom: -400px;
+  right: 10px;
+  text-align: center;
+}
+
+.layer-1 h1 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 10px;
+  font-family: "Inria Sans", sans-serif;
+  color: #B983FF;
+}
+
+.layer-2 h1 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 10px;
+  font-family: "Inria Sans", sans-serif;
+  color: #B983FF;
+}
+
+.layer-1 p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 10px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.layer-2 p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 10px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+/*Inria font-family para el segundo parrafo*/
+.Inria {
+  font-family: "Inria Sans", sans-serif;
+}
+
