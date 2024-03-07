@@ -11,7 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inria+Sans&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:wght@400;700&display=swap')
+      </style>
+      <body>{children}</body>
     </html>
   );
 }
