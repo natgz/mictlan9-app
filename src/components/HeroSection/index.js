@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Button } from "../ButtonElements"
+import { Col, Container, Row } from 'react-bootstrap';
 import './HeroElements.css'
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 
@@ -23,42 +24,30 @@ function HeroSection() {
         <h1 className="HeroH1">MICTLÁN9</h1>
         <h2 className="HeroH2 ubuntu-regular">Próximamente</h2>
         <p className="HeroP ubuntu-regular">Sumérgete en la magia de Mitlán: donde cada trago es un viaje místico.</p>
-        <div className="HeroBtnWrapper">
-          <div className="row">
-            <div className="column">
-              <Button
-                to="signup"
-                onMouseEnter={onHover}
-                onMouseLeave={onHover}
-                primary="true"
-                dark="true"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-              Visita Nuestro Menú {hover ? <MdArrowForward className="ArrowForward"/> : <MdKeyboardArrowRight className="ArrowRight"/>}
-              </Button>
-            </div>
-            <div className="column">
-              <Button
-                to="signup"
-                onMouseEnter={onHover2}
-                onMouseLeave={onHover2}
-                primary="true"
-                dark="true"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Reservación {hover2 ? <MdArrowForward className="ArrowForward"/> : <MdKeyboardArrowRight className="ArrowRight"/>}
-              </Button>
-            </div>
-          </div>
-        </div>
+        <Container>
+        <Row className="HeroBtnWrapper">
+          <Col>
+            <Button
+              onMouseEnter={onHover}
+              onMouseLeave={onHover}
+              primary="true"
+              dark="true"
+            >
+            Visita Nuestro Menú {hover ? <MdArrowForward className="ArrowForward"/> : <MdKeyboardArrowRight className="ArrowRight"/>}
+            </Button>
+          </Col>
+          <Col>
+            <Button
+              onMouseEnter={onHover2}
+              onMouseLeave={onHover2}
+              primary="true"
+              dark="true"
+            >
+              Reservación {hover2 ? <MdArrowForward className="ArrowForward"/> : <MdKeyboardArrowRight className="ArrowRight"/>}
+            </Button>
+          </Col>
+        </Row>
+        </Container>
       </div>
     </div>
   )

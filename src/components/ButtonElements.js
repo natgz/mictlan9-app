@@ -12,7 +12,7 @@ export const Button = styled(Link)`
   outline: none;
   border: none;
   cursor: pointer;
-  display: inline-flex;
+  /* display: ; */
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;

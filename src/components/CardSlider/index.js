@@ -5,22 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function CardSlider(
-  theme,
-  heading,
-  text,
-  id,
-  rows,
-  topLine,
-  headline,
-  description,
-  buttonLabel,
-  img,
-  alt,
-  primary,
-  dark,
-  dark2
-) {
+function CardSlider() {
   var settings = {
     dots: true,
     infinite: true,

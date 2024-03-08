@@ -40,6 +40,7 @@ export default function Home() {
       <CardSlider />
       <InfoSection {...Reservaciones} />
       <Gallery />
+      <Location />
       {/* <InfoSection {...Ubicacion} /> */}
       <InfoSection {...Contacto} />
       <Footer />

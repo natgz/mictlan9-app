@@ -1,0 +1,50 @@
+.LocationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background: #0c0c0c;
+}
+
+.MapsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 300px;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background: #0c0c0c;
+}
+
+.MapResponsive {
+  overflow: hidden;
+  margin-top: 90px;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.Card.Title {
+  color: #fff!important;
+  font-size: 135px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  display: block;
+  color: #fff!important;
+  font-size: 135px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

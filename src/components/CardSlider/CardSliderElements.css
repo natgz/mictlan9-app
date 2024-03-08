@@ -7,6 +7,7 @@
   margin: 0 auto;
   padding: 0 50px;
   z-index: 2;
+  background-color: black;
 }
 
 .CardSliderWrapper {
@@ -69,7 +70,7 @@
   font-weight: 600;
   color: #fff;
   text-align: center;
-  background-color: #360b33bd;
+  background-color: #9500ffad;
   border-radius: 20px;
   padding: 10px;
   font-family: "Ubuntu", sans-serif;

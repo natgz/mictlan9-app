@@ -97,7 +97,7 @@ const Navbar = ({ toggle }) => {
               </li>
             </ul>
             <nav className="NavBtn">
-              <div className="NavBtnLink"><Link href="/calavera">Crea tu calavera</Link></div>
+              <button className="NavBtnLink" href="/calavera">Crea tu calavera</button>
             </nav>
           </div>
         </nav>
