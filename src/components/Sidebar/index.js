@@ -1,5 +1,4 @@
 import React from "react"
-import Link from 'next/link'
 import './SidebarElements.css'
 import { FaTimes } from "react-icons/fa"
 
@@ -16,16 +15,16 @@ const Sidebar = ({ isOpen, toggle }) => {
         <div className="SidebarWrapper">
           <ul className="SidebarMenu">
             <div className="SidebarLink" to="about" onClick={toggle}>
-            <Link href="#about">Nosotros</Link>
+            <a href="#about">Nosotros</a>
             </div>
             <div className="SidebarLink" to="discover" onClick={toggle}>
-            <Link href="#discover">Tienda</Link>
+            <a href="#discover">Tienda</a>
             </div>
             <div className="SidebarLink" to="services" onClick={toggle}>
-            <Link href="#services">Blogs & Recetas</Link>
+            <a href="#services">Blogs & Recetas</a>
             </div>
             <div className="SidebarLink" to="signup" onClick={toggle}>
-            <Link href="#location">Ubicaciones</Link>
+            <a href="#location">Ubicaciones</a>
             </div>
           </ul>
           <div className="SideBtnWrap">
