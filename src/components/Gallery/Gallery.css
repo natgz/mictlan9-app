@@ -42,24 +42,25 @@
 
 .layer-1 {
   position: absolute;
-  margin-bottom: 400px;
   right: 50px;
   left: 50px;
   text-align: center;
+  color: white;
 }
 
 .layer-2 {
   position: absolute;
-  margin-top: 400px;
+  margin-top: 425px;
   right: 50px;
   left: 50px;
   text-align: center;
+  color: white;
 }
 
 .layer-1 h1 {
   font-size: 20px;
   letter-spacing: 1px;
-  margin: 10px;
+  margin: 20px;
   font-family: "Cormorant Garamond", serif;
   color: #B983FF;
 }
@@ -67,27 +68,14 @@
 .layer-2 h1 {
   font-size: 20px;
   letter-spacing: 1px;
-  margin: 10px;
+  margin: 20px;
   font-family: "Cormorant Garamond", serif;
   color: #B983FF;
 }
 
-.layer-1 p {
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin: 10px;
-  font-family: "Inria Sans", sans-serif;
-}
-
-.layer-2 p {
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin: 10px;
-  font-family: "Inria Sans", sans-serif;
-}
-
 /*Color para el segundo parrafo*/
 .Inria {
-color: #8f8f91
+  margin-top: -10px;
+  color: #8f8f91
 }
 

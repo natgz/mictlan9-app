@@ -39,7 +39,10 @@ function Gallery() {
             <div className='layer-1'>
               <h1>LAS INSTALACIONES</h1>
               <p>¡Para todos y con todos!</p>
-              <p className='Inria'> Te hacemos sentir como en casa.</p>
+              <p className='Inria'>
+                {' '}
+                Te hacemos sentir como en casa. Ven y dsifruta del lugar.{' '}
+              </p>
             </div>
             <img
               className='img-1'
