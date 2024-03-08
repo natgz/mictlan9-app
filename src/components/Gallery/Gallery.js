@@ -3,7 +3,7 @@ import './Gallery.css';
 
 function Gallery() {
   return (
-    <section className='gallery container'>
+    <section className='gallery'>
       <div>
         <div className='wrapper'>
           <div className='media'>
