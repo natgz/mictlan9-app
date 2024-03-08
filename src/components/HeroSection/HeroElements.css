@@ -4,7 +4,7 @@
   align-items: center;
   padding: 0 30px;
   min-height: 100vh;
-  position: relative;
+  /* position: relative; */
   z-index: 1;
 }
 

@@ -42,8 +42,8 @@ function Location() {
   return (
     <div className="LocationContainer">
       <Row>
-        <Col>
-          <Card className="text-center" text="light" style={{  width: '400px', maxWidth: "50rem" , textAlign:"center", margin:"70px", padding:"1px", backgroundColor:"#f0f8ff00", fontSize: "20px", fontFamily: "Ubuntu, sans-serif" }}>
+        <Col xs={12} xl={6}>
+          <Card className="text-center col-md-12" text="light" style={{  width: '400px', maxWidth: "50rem" , textAlign:"center", margin:"70px", padding:"1px", backgroundColor:"#f0f8ff00", fontSize: "20px", fontFamily: "Ubuntu, sans-serif" }}>
             <Card.Body>
               <h3>ENVIANOS UN MENSAJE</h3>
               <Form>
@@ -96,7 +96,7 @@ function Location() {
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+        <Col xs={12} xl={6}>
           <div className='MapResponsive'>
           <h3>UBICACIÓN</h3>
             <iframe 

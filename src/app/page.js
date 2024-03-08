@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import styles from './page.module.css';
+// import styles from './page.module.css';
 import Navbar from '../components/Navbar/index.js';
 import Sidebar from '../components/Sidebar';
 import HeroSection from '../components/HeroSection';

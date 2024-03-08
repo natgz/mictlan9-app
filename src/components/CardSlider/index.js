@@ -16,26 +16,31 @@ function CardSlider() {
 
   const data = [
     {
+      name: 'title1',
       title: 'title1',
       description: 'description1',
       img: './images/img1.jpeg'
     },
     {
+      name: 'title2',
       title: 'title2',
       description: 'description2',
       img: './images/img2.jpeg'
     },
     {
+      name: 'title3',
       title: 'title3',
       description: 'description3',
       img: './images/img3.jpeg'
     },
     {
+      name: 'title4',
       title: 'title4',
       description: 'description4',
       img: './images/vato.jpg'
     },
     {
+      name: 'title5',
       title: 'title5',
       description: 'description5',
       img: './images/bebidas.jpg'
@@ -64,10 +69,7 @@ function CardSlider() {
           <Button
             to="home"
             smooth='true'
-            duration='500'
-            spy='true'
             exact="true"
-            offset='-80'
             primary='true'
             dark='false'
             dark2='false'

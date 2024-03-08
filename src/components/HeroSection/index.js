@@ -28,6 +28,7 @@ function HeroSection() {
         <Row className="HeroBtnWrapper">
           <Col>
             <Button
+              to="menu"
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               primary="true"
@@ -38,6 +39,7 @@ function HeroSection() {
           </Col>
           <Col>
             <Button
+              to="reservaciones"
               onMouseEnter={onHover2}
               onMouseLeave={onHover2}
               primary="true"

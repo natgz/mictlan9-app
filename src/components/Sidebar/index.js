@@ -4,8 +4,6 @@ import { FaTimes } from "react-icons/fa"
 
 const Sidebar = ({ isOpen, toggle }) => {
   const containeropen = (isOpen == "closed") ? 'SidebarContainer containerclosed' : 'SidebarContainer'
-  console.log(isOpen, 'isOpen')
-  console.log(toggle, 'toggle')
   return (
     <div>
       <aside className={containeropen} onClick={toggle}>

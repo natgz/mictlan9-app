@@ -20,6 +20,7 @@ export const Button = styled(Link)`
   font-family: "Inria Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-decoration: none;
   
   &:hover {
     transition: all 0.2s ease-in-out;

@@ -24,7 +24,8 @@
 
 .MapResponsive {
   overflow: hidden;
-  margin-top: 90px;
+  /* margin-top: 90px; */
+  padding-top: 10%;
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
@@ -38,4 +39,20 @@ h3 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+iframe {
+  position: flex;
+
+  @media screen and (max-width: 850px){
+    transition: 3s all ease;
+    width: 450px;
+    height: 350px;
+  }
+
+  /* @media screen and (max-width: 585px){
+    transition: 3s all ease;
+    width: 300px;
+    height: 200px;
+  } */
 }
