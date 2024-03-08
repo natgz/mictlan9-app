@@ -42,16 +42,17 @@
 
 .layer-1 {
   position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-bottom: 400px;
+  right: 50px;
+  left: 50px;
   text-align: center;
 }
 
 .layer-2 {
   position: absolute;
-  margin-bottom: -400px;
-  right: 10px;
+  margin-top: 400px;
+  right: 50px;
+  left: 50px;
   text-align: center;
 }
 
@@ -59,7 +60,7 @@
   font-size: 20px;
   letter-spacing: 1px;
   margin: 10px;
-  font-family: "Inria Sans", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   color: #B983FF;
 }
 
@@ -67,7 +68,7 @@
   font-size: 20px;
   letter-spacing: 1px;
   margin: 10px;
-  font-family: "Inria Sans", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   color: #B983FF;
 }
 
@@ -75,18 +76,18 @@
   font-size: 16px;
   letter-spacing: 1px;
   margin: 10px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Inria Sans", sans-serif;
 }
 
 .layer-2 p {
   font-size: 16px;
   letter-spacing: 1px;
   margin: 10px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Inria Sans", sans-serif;
 }
 
-/*Inria font-family para el segundo parrafo*/
+/*Color para el segundo parrafo*/
 .Inria {
-  font-family: "Inria Sans", sans-serif;
+color: #8f8f91
 }
 
