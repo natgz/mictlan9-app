@@ -1,0 +1,22 @@
+.container {
+  max-width: fit-content!important;
+}
+
+.layer-1 {
+  text-align: center;
+  color: white;
+}
+
+.layer-1 h1 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 20px;
+  font-family: "Cormorant Garamond", serif;
+  color: #B983FF;
+}
+/*Color para el segundo parrafo*/
+.Inria {
+  margin-top: -10px;
+  color: #8f8f91
+}
+

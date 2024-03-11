@@ -1,40 +1,39 @@
 .LocationContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  height: 100vh;
-  position: relative;
+  padding: 60px;
   z-index: 1;
   background: #0c0c0c;
-}
-
-.MapsContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 300px;
-  height: 100vh;
   position: relative;
-  z-index: 1;
-  background: #0c0c0c;
 }
 
 .MapResponsive {
-  overflow: hidden;
-  /* margin-top: 90px; */
-  padding-top: 10%;
-  padding-bottom: 56.25%;
+  /* overflow: hidden; */
+  padding: 50px;
   position: relative;
-  height: 0;
+  /* height: 0; */
+}
+
+.MapText {
+  position: absolute;
+  display: contents;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #B983FF;
+  border-color: #B983FF;
 }
 
 h3 {
   display: block;
-  color: #fff!important;
-  font-size: 135px;
+  color: #B983FF!important;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4,p,h5 {
+  color: #fff;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -49,10 +48,4 @@ iframe {
     width: 450px;
     height: 350px;
   }
-
-  /* @media screen and (max-width: 585px){
-    transition: 3s all ease;
-    width: 300px;
-    height: 200px;
-  } */
 }

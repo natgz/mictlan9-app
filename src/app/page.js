@@ -18,7 +18,7 @@ import {
 } from '../components/InfoSection/Data';
 import Footer from '../components/Footer';
 import { whatsapp } from '../components/InfoSection/Data';
-import Gallery from '../components/Gallery/Gallery';
+import Gallery from '../components/Gallery';
 import Location from '../components/Location';
 import CardSlider from '../components/CardSlider';
 import { Button } from 'react-bootstrap';

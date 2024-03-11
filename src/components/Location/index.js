@@ -41,9 +41,11 @@ function Location() {
 
   return (
     <div className="LocationContainer">
+      <h2>Te esperamos</h2>
+      <h1>MICTLAN9</h1>
       <Row>
         <Col xs={12} xl={6}>
-          <Card className="text-center col-md-12" text="light" style={{  width: '400px', maxWidth: "50rem" , textAlign:"center", margin:"70px", padding:"1px", backgroundColor:"#f0f8ff00", fontSize: "20px", fontFamily: "Ubuntu, sans-serif" }}>
+          <Card className="text-center col-md-12" text="light" style={{ backgroundColor:"#f0f8ff00", fontSize: "20px", fontFamily: "Ubuntu, sans-serif" }}>
             <Card.Body>
               <h3>ENVIANOS UN MENSAJE</h3>
               <Form>
@@ -100,13 +102,27 @@ function Location() {
           <div className='MapResponsive'>
           <h3>UBICACIÓN</h3>
             <iframe 
-              width="800" 
-              height="700" 
+              width="500" 
+              height="320" 
               style={{border:"0"}} 
               loading="lazy" 
               allowFullScreen={false}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.201744203533!2d-100.19447651350211!3d25.763899091651933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662ebed10d1258b%3A0xddb899ae0870f576!2sPlaza%20Sendero%20La%20Fe!5e0!3m2!1sen!2smx!4v1709854640273!5m2!1sen!2smxhttps://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.201744203533!2d-100.19447651350211!3d25.763899091651933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662ebed10d1258b%3A0xddb899ae0870f576!2sPlaza%20Sendero%20La%20Fe!5e0!3m2!1sen!2smx!4v1709854640273!5m2!1sen!2smx">
-            </iframe>                
+            </iframe>   
+            <Row>
+              <Col xs={12} md={6}>
+                <div className="MapText">
+                  <h5>Plaza Sendero La Fe</h5>
+                  <p>Av. Miguel Alemán 1, La Fe, 66600 Cd Apodaca, N.L.</p>
+                </div>
+              </Col>
+              <Col xs={12} md={6} border>
+                <div className="MapText">
+                  <h4>Horario</h4>
+                  <p>Lunes a Domingo de 11:00 a 21:00 hrs</p>
+                </div>
+              </Col>
+            </Row>         
           </div>
         </Col>
       </Row>
