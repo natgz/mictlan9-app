@@ -20,3 +20,11 @@
   color: #8f8f91
 }
 
+.galleryImg {
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+}
+

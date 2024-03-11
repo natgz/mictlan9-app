@@ -17,22 +17,26 @@ function Gallery() {
                 especialmente para ti.
               </p>
             </div>
-            <Image
-              className='rounded text-center'
-              src='/images/img-1.webp'
-              alt=''
-              fluid 
-            />
+            <div className='galleryImg'>
+              <Image
+                className='galleryImg rounded text-center'
+                src='/images/img-1.webp'
+                alt=''
+                fluid 
+              />
+            </div>
           </Stack>
         </Col>
         <Col>
           <Stack gap={3}>
-            <Image
-                className='rounded text-center'
+          <div className='galleryImg'>
+              <Image
+                className='galleryImg rounded text-center'
                 src='/images/img-2.jpeg'
                 alt=''
-                fluid
+                fluid 
               />
+            </div>
             <div className='layer-1'>
               <h1>EL MEJOR SABOR</h1>
               <p>¡Prueba las especialidades!</p>
@@ -52,22 +56,26 @@ function Gallery() {
                 Te hacemos sentir como en casa. Ven y disfruta del lugar.{' '}
               </p>
             </div>
-            <Image
-              className='rounded text-center'
-              src='/images/img-3.jpeg'
-              alt=''
-              fluid
-            />
+            <div className='galleryImg'>
+              <Image
+                className='galleryImg rounded text-center'
+                src='/images/img-3.jpeg'
+                alt=''
+                fluid 
+              />
+            </div>
           </Stack>
         </Col>
         <Col>
           <Stack gap={3}>
-            <Image
-                className='rounded text-center'
+          <div className='galleryImg'>
+              <Image
+                className='galleryImg rounded text-center'
                 src='/images/img-4.jpeg'
                 alt=''
-                fluid
+                fluid 
               />
+            </div>
             <div className='layer-1'>
               <h1>DISFRUTA LOS EVENTOS</h1>
               <p>¡Vive la pasión del deporte!</p>
