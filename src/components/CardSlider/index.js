@@ -24,7 +24,7 @@ function CardSlider() {
         }
       },
       {
-        breakpoint: 939,
+        breakpoint: 1073,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -32,7 +32,7 @@ function CardSlider() {
         }
       },
       {
-        breakpoint: 642,
+        breakpoint: 743,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
