@@ -7,6 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 function CardSlider() {
   var settings = {
+    className: "center",
+    centerMode: true,
+    centerPadding: "60px",
     dots: true,
     infinite: true,
     speed: 500,
