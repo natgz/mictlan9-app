@@ -8,17 +8,19 @@ import "slick-carousel/slick/slick-theme.css";
 function CardSlider() {
   var settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1246,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
+          style: {width: '200'},
           // infinite: true,
           dots: true
         }
@@ -38,7 +40,7 @@ function CardSlider() {
           slidesToScroll: 1
         }
       }
-    ]
+    ],
   };
 
   const data = [
