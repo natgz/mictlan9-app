@@ -8,13 +8,9 @@ import Sidebar from '../components/Sidebar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import {
-  Menu,
   Reservaciones,
   Nosotros,
-  Historia,
-  EquipoHumano,
   Contacto,
-  Ubicacion,
 } from '../components/InfoSection/Data';
 import Footer from '../components/Footer';
 import { whatsapp } from '../components/InfoSection/Data';
@@ -43,7 +39,6 @@ export default function Home() {
       <Gallery />
       <Location />
       {/* <InfoSection {...Ubicacion} /> */}
-      <InfoSection {...Contacto} />
       <Footer />
       <Button
         className='fixed-button-l'

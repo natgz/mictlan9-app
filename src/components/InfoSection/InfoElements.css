@@ -76,11 +76,11 @@
 .InfoWrapper {
   display: grid;
   width: 100%;
-  min-height: 860px;
+  /* min-height: 860px; */
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 67px 5px;
+  padding: 60px 5px 0px 5px;
 }
 
 .InfoRow1 {

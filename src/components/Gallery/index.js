@@ -7,7 +7,7 @@ function Gallery() {
   return (
     <Container className='bg-black p-5'>
       <Row>
-        <Col xs={12} md={6} xl={3} className='px-0'>
+        <Col xs={12} sm={6} md={6} xl={3} className='px-0'>
           <Stack gap={1}>
             <div className='layer-1'>
               <h1>SIN MIEDO</h1>
@@ -27,8 +27,8 @@ function Gallery() {
             </div>
           </Stack>
         </Col>
-        <Col xs={12} md={6} xl={3} className='px-0'>
-          <Stack gap={1}>
+        <Col xs={12} sm={6} md={6} xl={3} className='px-0'>
+          <Stack gap={1} className='stackUp'>
           <div className='galleryImg'>
               <Image
                 className='galleryImg rounded text-center flex-center'
@@ -46,7 +46,7 @@ function Gallery() {
             </div>
           </Stack>
         </Col>
-        <Col xs={12} md={6} xl={3} className='px-0'>
+        <Col xs={12} sm={6} md={6} xl={3} className='px-0'>
           <Stack gap={1}>
             <div className='layer-1'>
               <h1>LAS INSTALACIONES</h1>
@@ -66,8 +66,8 @@ function Gallery() {
             </div>
           </Stack>
         </Col>
-        <Col xs={12} md={6} xl={3} className='px-0'>
-          <Stack gap={1}>
+        <Col xs={12} sm={6} md={6} xl={3} className='px-0'>
+          <Stack gap={1} className='stackUp'>
           <div className='galleryImg'>
               <Image
                 className='galleryImg rounded text-center'

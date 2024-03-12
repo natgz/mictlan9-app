@@ -1,26 +1,65 @@
 .LocationContainer {
-  padding: 60px;
+  padding: 20px;
   z-index: 1;
   background: #0c0c0c;
-  position: relative;
+  /* position: relative; */
+}
+
+.LocationTitle {
+  margin-bottom: 30px;
+  padding: 0px 100px;
+
+  @media screen and (max-width: 768px){
+    text-align: center; 
+    padding: 0px 20px;
+  }
+}
+
+.LocationTitle h1{
+  color: #fff;
+  font-size: 55px;
+  text-align: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.LocationTitle h2{
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .MapResponsive {
-  /* overflow: hidden; */
-  padding: 50px;
-  position: relative;
-  /* height: 0; */
+  overflow: hidden;
+  margin: 20px;
+  padding: 20px 0px;
+
+  @media screen and (max-width: 768px){
+    margin: 0px;
+  }
 }
 
 .MapText {
-  position: absolute;
-  display: contents;
+  /* position: flex; */
+  /* display: contents; */
   top: 0%;
   left: 0%;
   width: 100%;
   height: 100%;
-  border: 2px solid #B983FF;
-  border-color: #B983FF;
+}
+
+.card-body {
+  padding: 0px 100px;
+
+  @media screen and (max-width: 768px){
+    padding: 0px 20px;
+    
+  }
 }
 
 h3 {
@@ -30,6 +69,7 @@ h3 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 40px;
 }
 
 h4,p,h5 {
@@ -41,16 +81,16 @@ h4,p,h5 {
 }
 
 iframe {
-  position: flex;
+  margin: 10px 0px;
 
-  @media screen and (max-width: 850px){
+  @media screen and (max-width: 768px){
     transition: 3s all ease;
-    width: 300px;
-    height: 150px;
+    width: 550px;
+    height: 450px;
   }
-  @media screen and (max-width: 435px){
+  @media screen and (max-width: 400px){
     transition: 3s all ease;
-    width: 230px;
-    height: 100px;
+    width: 340px;
+    height: 300px;
   }
 }

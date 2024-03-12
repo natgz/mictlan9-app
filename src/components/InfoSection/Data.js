@@ -26,7 +26,7 @@ export const Reservaciones = {
   text: "textLight",
   rows: "InfoRow1",
   topLine: "Reservaciones",
-  headline: "Asegura tu lugar en Mictlan.",
+  headline: "Asegura tu lugar",
   description: "Xolotl, el dios guía, ayuda a las almas a pasar por los peligros y obstáculos en su travesía por Mictlán, el inframundo..",
   buttonLabel: "Reserva ahora mismo",
   // cambiar el posicionamiento de la info de las columnas

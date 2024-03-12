@@ -33,3 +33,9 @@
   }
 }
 
+.stackUp {
+  /* margin-top: 20px; */
+  @media screen and (max-width: 570px){
+    flex-direction: column-reverse !important;
+  }
+}

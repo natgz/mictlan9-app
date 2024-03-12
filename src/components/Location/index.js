@@ -41,13 +41,15 @@ function Location() {
 
   return (
     <div className="LocationContainer" id="ubicacion">
-      <h2>Te esperamos</h2>
-      <h1>MICTLAN9</h1>
+      <div className="LocationTitle">
+        <h1>MICTLAN9</h1>
+        <h2>Te esperamos</h2>
+        <h2>Envianos un Mensaje</h2>
+      </div>
       <Row>
         <Col xs={12} xl={6}>
           <Card className="text-center col-md-12" text="light" style={{ backgroundColor:"#f0f8ff00", fontSize: "20px", fontFamily: "Ubuntu, sans-serif" }}>
             <Card.Body>
-              <h3>ENVIANOS UN MENSAJE</h3>
               <Form>
                 <Form.Group xs={12} className="mb-3">
                   <Form.Label htmlFor="name">Nombre:</Form.Label>
@@ -100,7 +102,6 @@ function Location() {
         </Col>
         <Col xs={12} xl={6}>
           <div className='MapResponsive'>
-          <h3>UBICACIÓN</h3>
             <iframe 
               width="500" 
               height="320" 
@@ -116,9 +117,9 @@ function Location() {
                   <p>Av. Miguel Alemán 1, La Fe, 66600 Cd Apodaca, N.L.</p>
                 </div>
               </Col>
-              <Col xs={12} md={6} border>
+              <Col xs={12} md={6} border color="blue">
                 <div className="MapText">
-                  <h4>Horario</h4>
+                  <h5>Horario</h5>
                   <p>Lunes a Domingo de 11:00 a 21:00 hrs</p>
                 </div>
               </Col>
