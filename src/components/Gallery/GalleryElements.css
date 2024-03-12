@@ -2,6 +2,14 @@
   max-width: fit-content!important;
 }
 
+.galleryTitle h1 {
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+  color: #fff;
+  margin: 50px 0px;
+  text-align: center;
+}
+
 .layer-1 {
   text-align: center;
   color: white;

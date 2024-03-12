@@ -6,6 +6,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 function Gallery() {
   return (
     <Container className='bg-black p-5'>
+      <div className='galleryTitle'>
+        <h1>Experiencia Mictlán</h1>
+      </div>
       <Row>
         <Col xs={12} sm={6} md={6} xl={3} className='px-0'>
           <Stack gap={1}>

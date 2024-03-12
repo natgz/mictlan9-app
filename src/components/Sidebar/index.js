@@ -30,9 +30,6 @@ const Sidebar = ({ isOpen, toggle }) => {
             <div className="SidebarLink" onClick={(e) => scrollTo(e, "ubicacion")}>
               Ubicación
             </div>
-            <div className="SidebarLink" onClick={(e) => scrollTo(e, "contacto")}>
-              Contacto
-            </div>
           </ul>
           <div className="SideBtnWrap">
             <div className="SidebarRoute" to="/signin">Iniciar sesión</div>

@@ -1,14 +1,15 @@
 .InfoContainer {
-  background: linear-gradient(
+  /* background: linear-gradient(
     0deg,
     rgba(36, 35, 36, 0.699) 100%,
     rgba(204, 204, 204, 0.171) 100%
-  );
+  ); */
   
 }
 
 .lightBg {
-  background-image: url('/images/background.webp');
+  /* background-image: url('/images/background.webp'); */
+  background-color: black;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
