@@ -4,9 +4,12 @@ import { animateScroll as scroll } from "react-scroll"
 import "./FooterElements.css"
 
 const Footer = () => {
-  const toggleHome = () => {
-    scroll.scrollToTop()
-  }
+  const scrollTo = (e, a) => {
+    let element = document.getElementById(a);
+    e.preventDefault();
+    element &&
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
 
   return (
     <footer className="FooterContainer">
@@ -39,7 +42,7 @@ const Footer = () => {
         </div>
         <section className="SocialMedia">
           <div className="SocialMediaWrap">
-            <div className="SocialLogo" to="/" onClick={toggleHome}>
+            <div className="SocialLogo" to="/" onClick={(e) => scrollTo(e, "home")}>
               MICTLÁN9
             </div>
             <small className="WebsiteRights">

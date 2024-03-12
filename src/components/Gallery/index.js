@@ -7,8 +7,8 @@ function Gallery() {
   return (
     <Container className='bg-black p-5'>
       <Row>
-        <Col>
-          <Stack gap={3}>
+        <Col xs={12} md={6} xl={3} className='px-0'>
+          <Stack gap={1}>
             <div className='layer-1'>
               <h1>SIN MIEDO</h1>
               <p>¡Mejor ambiente!</p>
@@ -27,11 +27,11 @@ function Gallery() {
             </div>
           </Stack>
         </Col>
-        <Col>
-          <Stack gap={3}>
+        <Col xs={12} md={6} xl={3} className='px-0'>
+          <Stack gap={1}>
           <div className='galleryImg'>
               <Image
-                className='galleryImg rounded text-center'
+                className='galleryImg rounded text-center flex-center'
                 src='/images/img-2.jpeg'
                 alt=''
                 fluid 
@@ -46,8 +46,8 @@ function Gallery() {
             </div>
           </Stack>
         </Col>
-        <Col>
-          <Stack gap={3}>
+        <Col xs={12} md={6} xl={3} className='px-0'>
+          <Stack gap={1}>
             <div className='layer-1'>
               <h1>LAS INSTALACIONES</h1>
               <p>¡Para todos y con todos!</p>
@@ -66,8 +66,8 @@ function Gallery() {
             </div>
           </Stack>
         </Col>
-        <Col>
-          <Stack gap={3}>
+        <Col xs={12} md={6} xl={3} className='px-0'>
+          <Stack gap={1}>
           <div className='galleryImg'>
               <Image
                 className='galleryImg rounded text-center'

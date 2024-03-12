@@ -4,33 +4,41 @@ import { FaTimes } from "react-icons/fa"
 
 const Sidebar = ({ isOpen, toggle }) => {
   const containeropen = (isOpen == "closed") ? 'SidebarContainer containerclosed' : 'SidebarContainer'
+  const scrollTo = (e, a) => {
+    let element = document.getElementById(a);
+    e.preventDefault();
+    element &&
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+  
   return (
-    <div>
-      <aside className={containeropen} onClick={toggle}>
+      <div className={containeropen} onClick={toggle}>
+        <div className="SidebarWrapper">
         <div className="Icon" onClick={toggle}>
           <FaTimes className="CloseIcon"/>
         </div>
-        <div className="SidebarWrapper">
           <ul className="SidebarMenu">
-            <div className="SidebarLink" to="about" onClick={toggle}>
-            <a href="#about">Nosotros</a>
+            <div className="SidebarLink" onClick={(e) => scrollTo(e, "nosotros")}>
+              Nosotros
             </div>
-            <div className="SidebarLink" to="discover" onClick={toggle}>
-            <a href="#discover">Tienda</a>
+            <div className="SidebarLink" onClick={(e) => scrollTo(e, "menu")}>
+              Menú
             </div>
-            <div className="SidebarLink" to="services" onClick={toggle}>
-            <a href="#services">Blogs & Recetas</a>
+            <div className="SidebarLink" onClick={(e) => scrollTo(e, "reservaciones")}>
+              Reservaciones
             </div>
-            <div className="SidebarLink" to="signup" onClick={toggle}>
-            <a href="#location">Ubicaciones</a>
+            <div className="SidebarLink" onClick={(e) => scrollTo(e, "ubicacion")}>
+              Ubicación
+            </div>
+            <div className="SidebarLink" onClick={(e) => scrollTo(e, "contacto")}>
+              Contacto
             </div>
           </ul>
           <div className="SideBtnWrap">
             <div className="SidebarRoute" to="/signin">Iniciar sesión</div>
           </div>
         </div>
-    </aside>
-  </div>
+    </div>
   )
 }
 

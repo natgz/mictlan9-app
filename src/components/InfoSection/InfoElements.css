@@ -4,6 +4,7 @@
     rgba(36, 35, 36, 0.699) 100%,
     rgba(204, 204, 204, 0.171) 100%
   );
+  
 }
 
 .lightBg {
@@ -11,11 +12,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
-  /* color: #fff; */
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
 }
 
 .blackBg {
@@ -27,6 +23,7 @@
 }
 
 .headingLight {
+  text-align: center;
   margin-bottom: 24px;
   font-size: 58px;
   line-height: 1.1;
@@ -78,14 +75,12 @@
 
 .InfoWrapper {
   display: grid;
-  z-index: 1;
-  height: 860px;
   width: 100%;
+  min-height: 860px;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
-  justify-content: center;
+  padding: 67px 5px;
 }
 
 .InfoRow1 {
@@ -95,7 +90,7 @@
   grid-template-areas: 'col2 col1';
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: 'col1' 'col2';
+    grid-template-areas: 'col1 col1' 'col2 col2';
   }
 }
 
@@ -110,21 +105,11 @@
   }
 }
 
-.rowp {
-  display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
-  align-items: center;
-  grid-template-areas: 'col1 col2';
-
-  @media screen and (max-width: 768px) {
-    grid-template-areas: 'col1 col1' 'col2 col2';
-  }
-}
-
 .Column1 {
-  margin-bottom: 15px;
-  padding: 0 15px;
+  /* margin-bottom: 15px; */
+  /* padding: 0 15px; */
   grid-area: col1;
+  text-align: -webkit-center;
 }
 
 .Column2 {
@@ -135,8 +120,13 @@
 
 .TextWrapper {
   max-width: 540px;
-  padding-top: 0;
+  padding-top: 20px;
   padding-bottom: 60px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
 }
 
 .TopLine {
@@ -155,18 +145,29 @@
 
 .BtnWrap {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
-.ImgWrap {
+/* .ImgWrap {
   max-width: 555px;
   height: 100%;
-}
+} */
 
-.Img {
+.infoImg {
   border-radius: 20px;
+  height: auto;
   width: 100%;
-  margin: 0 0 10px 0;
+  /* margin: auto; */
+  /* margin: 0 0 30px 0; */
   padding-right: 0;
   max-height: 700px;
+
+  @media screen and (max-width: 768px) {
+    width: -webkit-fill-available;
+    margin-top: 15px;
+    padding: 0%;
+    /* width: 400px; */
+    /* height: 400px; */
+    
+  }
 }

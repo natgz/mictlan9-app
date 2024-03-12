@@ -96,6 +96,12 @@
   font-weight: 500;
   font-style: normal;
   font-size: 21px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 24px;
+    align-items: center;
+    display: flex;
+  }
 }
 
 .ArrowForward {

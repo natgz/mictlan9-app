@@ -46,7 +46,7 @@ const InfoSection = ({
             </div>
             <div className="Column2">
               <div className="ImgWrap">
-                <img className="Img" src={img} alt={alt} />
+                <img className="infoImg" src={img} alt={alt} />
               </div>
             </div>
           </div>

@@ -7,19 +7,16 @@ import "slick-carousel/slick/slick-theme.css";
 
 function CardSlider() {
   var settings = {
-    className: "center",
-    centerMode: true,
-    centerPadding: "60px",
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
-    adaptiveHeight: true,
+    // adaptiveHeight: true,
     responsive: [
       {
-        breakpoint: 1246,
+        breakpoint: 1300,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -29,7 +26,7 @@ function CardSlider() {
         }
       },
       {
-        breakpoint: 1073,
+        breakpoint: 1000,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -37,10 +34,11 @@ function CardSlider() {
         }
       },
       {
-        breakpoint: 743,
+        breakpoint: 700,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          
         }
       }
     ],
@@ -110,23 +108,19 @@ function CardSlider() {
   ]
 
   return (
-    <div className="CardSliderContainer">
+    <div className="CardSliderContainer" id="menu">
       <h1 className="CardSliderTitle">Nuestras Recomendaciones</h1>
       <Slider {...settings}>
         {data.map((item) => (
           <div key={item.name} className="CardSliderExtra">
-            <div className="CardSliderSpace">
-              <img src={item.img} alt={item.title} className="img"/>
-            </div>
-
-            <div className="CardSliderInfo">
+            <img src={item.img} alt={item.title} className="img"/>
               <h2 className="title">{item.title}</h2>
               <p className="description">{item.description}</p>
-            </div>
           </div>
         ))}
       </Slider>
-      <div className="BtnWrap">
+
+      <div className="BtnWrap1">
         <Button
           to="home"
           smooth='true'

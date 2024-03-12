@@ -8,11 +8,16 @@
 }
 
 .layer-1 h1 {
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 1px;
   margin: 20px;
   font-family: "Cormorant Garamond", serif;
   color: #B983FF;
+}
+
+.layer-1 p {
+  font-size: 17px;
+  letter-spacing: 1px;
 }
 /*Color para el segundo parrafo*/
 .Inria {

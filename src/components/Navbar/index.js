@@ -22,11 +22,7 @@ const Navbar = ({ toggle }) => {
     window.addEventListener("scroll", changeNav)
   }, [])
 
-  const toggleHome = () => {
-    scroll.scrollToTop()
-  }
-
-  const onClick = (e, a) => {
+  const scrollTo = (e, a) => {
     let element = document.getElementById(a);
     e.preventDefault();
     element &&
@@ -62,7 +58,7 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: "#fff" }}>
         <nav className={navbarBlack}>
           <div className="NavbarContainer">
-            <div className="NavLogo" onClick={toggleHome}>
+            <div className="NavLogo" onClick={(e) => scrollTo(e, "home")}>
               MICTLÁN9
             </div>
             <div className="MobileIcon" onClick={toggle}>
@@ -70,28 +66,28 @@ const Navbar = ({ toggle }) => {
             </div>
             <ul className="NavMenu">
               <li className="NavItem">
-                <div className="NavLinks" onClick={(e) => onClick(e, "nosotros")}>
+                <div className="NavLinks" onClick={(e) => scrollTo(e, "nosotros")}>
                   Nosotros
                 </div>
               </li>
               <li className="NavItem">
-                <div className="NavLinks" onClick={(e) => onClick(e, "menu")}>
+                <div className="NavLinks" onClick={(e) => scrollTo(e, "menu")}>
                   Menú
                     {/* platillos y mixologia */}
                 </div>
               </li>
               <li className="NavItem">
-                <div className="NavLinks" onClick={(e) => onClick(e, "reservaciones")}>
+                <div className="NavLinks" onClick={(e) => scrollTo(e, "reservaciones")}>
                   Reservaciones
                 </div>
               </li>
               <li className="NavItem">
-                <div className="NavLinks" onClick={(e) => onClick(e, "ubicacion")}>
+                <div className="NavLinks" onClick={(e) => scrollTo(e, "ubicacion")}>
                   Ubicación
                 </div>
               </li>
               <li className="NavItem">
-                <div className="NavLinks" onClick={(e) => onClick(e, "contacto")}>
+                <div className="NavLinks" onClick={(e) => scrollTo(e, "contacto")}>
                   Contacto
                 </div>
               </li>

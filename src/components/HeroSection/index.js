@@ -26,7 +26,7 @@ function HeroSection() {
         <p className="HeroP ubuntu-regular">Sumérgete en la magia de Mitlán: donde cada trago es un viaje místico.</p>
         <Container>
         <Row className="HeroBtnWrapper">
-          <Col>
+          <Col className="p-3 text-center">
             <Button
               to="menu"
               onMouseEnter={onHover}
@@ -37,7 +37,7 @@ function HeroSection() {
             Visita Nuestro Menú {hover ? <MdArrowForward className="ArrowForward"/> : <MdKeyboardArrowRight className="ArrowRight"/>}
             </Button>
           </Col>
-          <Col>
+          <Col className="p-3 text-center">
             <Button
               to="reservaciones"
               onMouseEnter={onHover2}

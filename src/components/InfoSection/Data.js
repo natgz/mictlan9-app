@@ -40,27 +40,6 @@ export const Reservaciones = {
   darkText: true
 }
 
-export const Ubicacion = {
-  id: "ubicacion",
-  theme: "blackBg",
-  heading: "headingLight",
-  text: "textLight",
-  rows: "InfoRow1",
-  topLine: "Reservaciones",
-  headline: "Asegura tu lugar Mictlan.",
-  description:
-    "Reserva ahora mismo.",
-  buttonLabel: "Reservar",
-  // cambiar el posicionamiento de la info de las columnas
-  imgStart: true,
-  //  true o false
-  img: "/images/img2.jpeg",
-  alt: "Bottle",
-  dark: true,
-  primary: true,
-  darkText: false
-}
-
 export const Contacto = {
   id: "contacto",
   theme: "blackBg",

@@ -40,7 +40,7 @@ function Location() {
   };
 
   return (
-    <div className="LocationContainer">
+    <div className="LocationContainer" id="ubicacion">
       <h2>Te esperamos</h2>
       <h1>MICTLAN9</h1>
       <Row>

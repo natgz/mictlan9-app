@@ -1,6 +1,6 @@
 .CardSliderContainer {
   background-color: rgb(0, 0, 0);
-  border: 70px solid #000;
+  border: 50px solid #000;
 }
 
 .CardSliderTitle {
@@ -13,10 +13,19 @@
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
   font-style: normal;
+
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+    
+  }
 }
 
 .CardSliderExtra {
-  /* height: 450px; */
+  justify-content: center;
+  align-items: center;
+  display: grid!important;
+  /* padding: 0 50px;   */
+
   &:hover {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
@@ -24,39 +33,23 @@
   }
 }
 
-.CardSliderSpace {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  height: 350px;
-}
-
-.CardSliderInfo {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 2px;
-  flex-direction: column;
-}
-
 .img {
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  display: flex;
+  width: 270px;
+  height: 270px;
+  border-radius: 20px;
   transition: 0.3s;
+  /* padding: 0px 10px; */
 }
 
 .title {
-  margin-top: 35px;
+  margin-top: 2px;
   font-size: 24px;
-  font-weight: 600;
   color: #fff;
   text-align: center;
-  background-color: #9500ffad;
+  /* background-color: #19131d7a; */
   border-radius: 20px;
-  padding: 10px;
+  padding: 5px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -64,7 +57,6 @@
 
 .description {
   font-size: 18px;
-  font-weight: 400;
   color: #fff;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
@@ -72,8 +64,8 @@
   font-style: normal;
 }
 
-.BtnWrap {
-  padding-top: 32px;
+.BtnWrap1 {
+  padding-top: 30px;
   display: flex;
   justify-content: center;
 }

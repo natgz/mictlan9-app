@@ -1,23 +1,25 @@
 
 .SidebarContainer {
-  position: absolute;
+  position: fixed;
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #0d0d0d;
+  background: #0d0d0de1;
+  backdrop-filter: blur(10px);
   display: grid;
+  height: 100vh;
   align-items: center;
   top: 0;
-  left: 0;
+  right: 0;
   transition: 0.3s ease-in-out;
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     width: 100%;
     }
 
     @media screen and (min-width: 768px) {
       width: 350px;
-    }
+    } */
 }
 
 .containerclosed {
@@ -30,7 +32,7 @@
 }
 
 .Icon {
-  position: absolute;
+  position: fixed;
   top: 1.2rem;
   right: 1.5rem;
   background: transparent;
@@ -46,12 +48,10 @@
 .SidebarMenu {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(6, 70px);
   text-align: center;
-
-  @media screen and (max-width: 768px) {
-    grid-template-rows: repeat(6, 60px);
-  }
+  justify-content: center;
+  padding-left: 0px;
 }
 
 .SidebarLink {
@@ -67,7 +67,7 @@
   cursor: pointer;
 
   &:hover {
-    color: #ea9d43;
+    color: #EB34DF;
     transition: 0.2s ease-in-out;
   }
 }
@@ -79,10 +79,10 @@
 
 .SidebarRoute {
   border-radius: 50px;
-  background: #ea9d43;
+  background: #EB34DF;
   white-space: nowrap;
   padding: 16px 64px;
-  color: #010606;
+  color: #fff;
   font-size: 16px;
   outline: none;
   border: none;
