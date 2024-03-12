@@ -73,7 +73,11 @@ const Navbar = ({ toggle }) => {
               <li className="NavItem">
                 <div className="NavLinks" onClick={(e) => scrollTo(e, "menu")}>
                   Menú
-                    {/* platillos y mixologia */}
+                </div>
+              </li>
+              <li className="NavItem">
+                <div className="NavLinks" onClick={(e) => scrollTo(e, "mixologia")}>
+                  Mixología
                 </div>
               </li>
               <li className="NavItem">
@@ -84,11 +88,6 @@ const Navbar = ({ toggle }) => {
               <li className="NavItem">
                 <div className="NavLinks" onClick={(e) => scrollTo(e, "ubicacion")}>
                   Ubicación
-                </div>
-              </li>
-              <li className="NavItem">
-                <div className="NavLinks" onClick={(e) => scrollTo(e, "contacto")}>
-                  Contacto
                 </div>
               </li>
             </ul>

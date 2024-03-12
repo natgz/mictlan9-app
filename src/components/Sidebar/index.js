@@ -24,6 +24,9 @@ const Sidebar = ({ isOpen, toggle }) => {
             <div className="SidebarLink" onClick={(e) => scrollTo(e, "menu")}>
               Menú
             </div>
+            <div className="SidebarLink" onClick={(e) => scrollTo(e, "mixologia")}>
+              Mixología
+            </div>
             <div className="SidebarLink" onClick={(e) => scrollTo(e, "reservaciones")}>
               Reservaciones
             </div>
