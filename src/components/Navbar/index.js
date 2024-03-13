@@ -59,7 +59,7 @@ const Navbar = ({ toggle }) => {
         <nav className={navbarBlack}>
           <div className="NavbarContainer">
             <div className="NavLogo" onClick={(e) => scrollTo(e, "home")}>
-              MICTLÁN9
+              <img src="/images/NOMBRE-MICTLAN.png" alt="MictlanLogo" />
             </div>
             <div className="MobileIcon" onClick={toggle}>
               <FaBars />

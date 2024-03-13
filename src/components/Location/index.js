@@ -47,7 +47,7 @@ function Location() {
         <h2>Envianos un Mensaje</h2>
       </div>
       <Row>
-        <Col xs={12} xl={6}>
+        <Col xs={12} md={6} xl={6}>
           <Card className="text-center col-md-12" text="light" style={{ backgroundColor:"#f0f8ff00", fontSize: "20px", fontFamily: "Ubuntu, sans-serif" }}>
             <Card.Body>
               <Form>
@@ -100,7 +100,7 @@ function Location() {
             </Card.Body>
           </Card>
         </Col>
-        <Col xs={12} xl={6}>
+        <Col xs={12} md={6} xl={6}>
           <div className='MapResponsive'>
             <iframe 
               width="500" 

@@ -21,9 +21,10 @@ function HeroSection() {
         <video className="VideoBg" autoPlay loop muted src="/videos/bar-video.mp4" type="video/mp4" />
       </div>
       <div className="HeroContent">
-        <h1 className="HeroH1">MICTLÁN9</h1>
-        <h2 className="HeroH2 ubuntu-regular">Próximamente</h2>
-        <p className="HeroP ubuntu-regular">Sumérgete en la magia de Mitlán: donde cada trago es un viaje místico.</p>
+        <div className="HeroLogo">
+          <img src="/images/MICTLAN-TERMINADO.png" alt="MitlánLogo" />
+        </div>
+        <p className="HeroP ubuntu-regular">Sumérgete en la magia de Mictlán.</p>
         <Container>
         <Row className="HeroBtnWrapper">
           <Col className="p-3 text-center">

@@ -34,9 +34,9 @@ const Sidebar = ({ isOpen, toggle }) => {
               Ubicación
             </div>
           </ul>
-          <div className="SideBtnWrap">
+          {/* <div className="SideBtnWrap">
             <div className="SidebarRoute" to="/signin">Iniciar sesión</div>
-          </div>
+          </div> */}
         </div>
     </div>
   )

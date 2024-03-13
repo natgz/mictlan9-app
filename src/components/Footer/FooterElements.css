@@ -1,18 +1,96 @@
-
 .FooterContainer {
   background-color: black;
+  display: flex;
+  justify-content: space-between;
 }
 
 .FooterWrap {
-  padding: 48px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
+  padding: 24px 48px;
 }
 
+.footerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.footerLogo img {
+  width: 150px;
+  height: 150px;
+  align-self: center;
+  cursor: pointer;
+  /* margin-bottom: 10px; */
+}
+
+.footerLogo p {
+  color: white;
+  font-size: 15px;
+  align-self: center;
+}
+
+.footerLinks h4 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.footerLinkItems a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1px;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  color: aliceblue;
+
+  &:hover {
+    color: rgb(240, 0, 240);
+    transition: 0.3s ease-out;
+  }
+}
+
+.footerSocial col {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.footerSocialItems {
+  justify-content: center;
+  text-align: center;
+}
+
+.footerSocialItems a {
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 20px;
+
+  &:hover {
+    color: rgb(240, 0, 240);
+    transition: 0.3s ease-out;
+  }
+}
+
+.footerContacto p {
+  color: white;
+  font-size: 18px;
+  padding-top: 45px;
+  /* text-align: end; */
+}
+
+
+/* .footerSocial a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* 
 .FooterLinksContainer {
   display: flex;
   justify-content: center;
@@ -109,4 +187,4 @@
 .SocialIconLink {
   color: #fff;
   font-size: 24px;
-}
+} */

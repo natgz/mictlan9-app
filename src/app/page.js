@@ -40,13 +40,13 @@ export default function Home() {
       <Location />
       {/* <InfoSection {...Ubicacion} /> */}
       <Footer />
-      <Button
+      {/* <Button
         className='fixed-button-l'
         variant='success'
         onClick={() => whatsapp()}
       >
         <i className='bi bi-whatsapp'></i>
-      </Button>
+      </Button> */}
     </>
   );
 }
