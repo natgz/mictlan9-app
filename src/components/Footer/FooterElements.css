@@ -1,11 +1,11 @@
 .FooterContainer {
   background-color: black;
-  display: flex;
-  justify-content: space-between;
+  align-content: column;
 }
 
 .FooterWrap {
-  padding: 24px 48px;
+  padding: 0px 30px;
+  display: flex;
 }
 
 .footerLogo {
@@ -21,6 +21,11 @@
   align-self: center;
   cursor: pointer;
   /* margin-bottom: 10px; */
+
+  @media screen and (max-width: 450px){
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .footerLogo p {
@@ -39,7 +44,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1px;
+  /* margin: 1px; */
   text-align: center;
   list-style: none;
   text-decoration: none;
@@ -83,6 +88,33 @@
   /* text-align: end; */
 }
 
+.WebsiteRights {
+  color: white!important;
+}
+
+.WebsiteRights a {
+  color: white!important;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  list-style: none;
+
+  @media screen and (max-width: 450px){
+    font-size: 10px;
+  }
+}
+
+.footerSocial h4 {
+  @media screen and (max-width: 450px){
+    font-size: 14px;
+  }
+}
+
+.footerSocial p {
+  @media screen and (max-width: 450px){
+    font-size: 10px;
+  }
+}
 
 /* .footerSocial a {
   display: flex;

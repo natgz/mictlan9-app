@@ -15,11 +15,9 @@ const Footer = () => {
 
   return (
     <footer className="FooterContainer">
-      <Stack direction="vertical" gap={0}>
-        <Row className="FooterWrap">
-
+        <div className="FooterWrap">
           <Col className="footerLogo">
-            <Stack direction="vertical" gap={2}>
+            <Stack direction="vertical" gap={0}>
               <img src="/images/MICTLAN-TERMINADO.png" alt="MictlanLogo" onClick={(e) => scrollTo(e, "home")}/>
               <p>Viaja por los 9 niveles y sumérgete en la magia de Mictlán.</p>
             </Stack>
@@ -27,7 +25,7 @@ const Footer = () => {
 
           <Col className="footerLinks">
             <div className="footerLinkItems">
-              <Stack direction="vertical" gap={2} className="p-3">
+              <Stack direction="vertical" gap={0} >
                 <a href="/" onClick={(e) => scrollTo(e, "nosotros")}>Nosotros</a>
                 <a href="/" onClick={(e) => scrollTo(e, "menu")}>Menú</a>
                 <a href="/" onClick={(e) => scrollTo(e, "mixologia")}>Mixología</a>
@@ -39,7 +37,7 @@ const Footer = () => {
 
           <Col className="footerSocial">
             <h4>¡Siguenos en nuestras redes sociales!</h4>
-            <div className="footerSocialItems hstack gap-5">
+            <div className="footerSocialItems hstack gap-3">
               <a href="https://www.facebook.com/MictlanCantina" target="_blank">
                 <FaFacebook />
               </a>
@@ -55,18 +53,15 @@ const Footer = () => {
             </div>
           </Col>
 
-        </Row>
+        </div>
         <div className="FooterBottom">
-          <Row>
             <small className="WebsiteRights">
               Copyright &copy;
-              <a href="/" className="text-muted">
+              <a>
                 {new Date().getFullYear()} MICTLÁN9 Restaurante y Mixología. Todos los derechos reservados.
               </a>
             </small>
-          </Row>
         </div>
-      </Stack>
     </footer>
   )
 }
