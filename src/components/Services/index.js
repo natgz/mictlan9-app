@@ -15,7 +15,7 @@ import {
 const Services = () => {
   return (
     <ServicesContainer id="menu">
-      <ServicesH1>Platillos & Mixología</ServicesH1>
+      <ServicesH1>¡CREA TU CALAVERA!</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src="/images/bebidas.jpg" />

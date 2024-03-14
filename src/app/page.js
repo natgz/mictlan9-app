@@ -1,8 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
-// import styles from './page.module.css';
 import Navbar from '../components/Navbar/index.js';
 import Sidebar from '../components/Sidebar';
 import HeroSection from '../components/HeroSection';
@@ -10,14 +8,14 @@ import InfoSection from '../components/InfoSection';
 import {
   Reservaciones,
   Nosotros,
-  Contacto,
 } from '../components/InfoSection/Data';
 import Footer from '../components/Footer';
 import { whatsapp } from '../components/InfoSection/Data';
 import Gallery from '../components/Gallery';
 import Location from '../components/Location';
 import CardSlider from '../components/CardSlider';
-import { Button } from 'react-bootstrap';
+import Mixology from '../components/Mixology';
+import Services from '../components/Services';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState('closed');
@@ -33,10 +31,12 @@ export default function Home() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
+      {/* <Services /> */}
+      <Gallery />
       <InfoSection {...Nosotros} />
       <CardSlider />
+      <Mixology />
       <InfoSection {...Reservaciones} />
-      <Gallery />
       <Location />
       {/* <InfoSection {...Ubicacion} /> */}
       <Footer />

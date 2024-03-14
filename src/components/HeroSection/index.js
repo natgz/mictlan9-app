@@ -24,7 +24,7 @@ function HeroSection() {
         <div className="HeroLogo">
           <img src="/images/MICTLAN-TERMINADO.png" alt="MitlánLogo" />
         </div>
-        <p className="HeroP ubuntu-regular">Sumérgete en la magia de Mictlán.</p>
+        <p className="HeroP">Sumérgete en la magia de Mictlán.</p>
         <Container>
         <Row className="HeroBtnWrapper">
           <Col className="p-3 text-center">

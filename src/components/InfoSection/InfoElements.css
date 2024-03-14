@@ -1,11 +1,10 @@
-.InfoContainer {
-  /* background: linear-gradient(
+/* .InfoContainer {
+  background: linear-gradient(
     0deg,
     rgba(36, 35, 36, 0.699) 100%,
     rgba(204, 204, 204, 0.171) 100%
-  ); */
-  
-}
+  );
+} */
 
 .lightBg {
   /* background-image: url('/images/background.webp'); */
@@ -30,8 +29,8 @@
   line-height: 1.1;
   font-weight: 600;
   color: #f7f8fa;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
+  font-family: var(--font-title);
+  font-weight: 500;
   font-style: normal;
 
   @media screen and (max-width: 480px) {
@@ -56,8 +55,8 @@
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: #fff;
-  font-family: "Inria Sans", sans-serif;
+  color: #a3a3a5;
+  font-family: var(--font-main);
   font-weight: 400;
   font-style: normal;
 }
@@ -68,7 +67,7 @@
   font-size: 18px;
   line-height: 24px;
   color: #010606;
-  font-family: "Inria Sans", sans-serif;
+  font-family: var(--font-main);
   font-weight: 400;
   font-style: normal;
 }
@@ -132,13 +131,13 @@
 
 .TopLine {
   color: #B983FF;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  font-family: "Inria Sans", sans-serif;
+  font-family: var(--font-subtitle);
   font-weight: 400;
   font-style: normal;
 }

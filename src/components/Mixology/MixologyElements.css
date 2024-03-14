@@ -2,7 +2,7 @@
   max-width: fit-content!important;
 }
 
-.galleryTitle h1 {
+.MixologyTitle h1 {
   font-size: 50px;
   font-family: var(--font-title);
   color: #fff;
@@ -10,35 +10,35 @@
   text-align: center;
 }
 
-.layer-1 {
+.mixologyText {
   text-align: center;
   color: white;
-  margin: 20px;
 }
 
-.layer-1 h4 {
-  font-size: 16px;
-  /* letter-spacing: 1px; */
-  margin: 2px;
-  font-family: var(--font-subtitle);
-  color: #fff;
-}
-
-.subtitle {
+.mixologyText h1 {
   font-size: 30px;
   letter-spacing: 1px;
-  margin: 0px 20px 20px 20px;
-  font-family: var(--font-title);
-  color: #b983ff;
-}
-/*Color para el segundo parrafo*/
-.mixDescription {
-  font-family: var(--font-main);
-  margin-top: -10px;
-  color: #a3a3a5
+  margin: 20px;
+  font-family: var(--font-subtitle);
+  color: #ff83ff;
 }
 
-.galleryImg {
+.mixologyText h3 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: var(--font-title);
+}
+
+.mixologyText p {
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-family: var(--font-main);
+  margin-top: 5px;
+  color: #8f8f91
+}
+/*Color para el segundo parrafo*/
+
+.MixologyImg {
   &:hover {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;

@@ -9,9 +9,9 @@
   font-weight: 600;
   color: #fff;
   text-align: center;
-  /* margin-bottom: 64px; */
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
+  padding: 30px 0;
+  font-family: var(--font-title);
+  font-weight: 400;
   font-style: normal;
 
   @media screen and (max-width: 768px) {
@@ -50,8 +50,8 @@
   /* background-color: #19131d7a; */
   border-radius: 20px;
   padding: 5px;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
+  font-family: var(--font-subtitle);
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -59,8 +59,8 @@
   font-size: 18px;
   color: #fff;
   text-align: center;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
+  font-family: var(--font-main);
+  font-weight: 200;
   font-style: normal;
 }
 

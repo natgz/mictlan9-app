@@ -23,7 +23,7 @@ const Footer = () => {
             </Stack>
           </Col>
 
-          <Col className="footerLinks">
+          <Col className="footerLinks align-self-center">
             <div className="footerLinkItems">
               <Stack direction="vertical" gap={0} >
                 <a href="/" onClick={(e) => scrollTo(e, "nosotros")}>Nosotros</a>

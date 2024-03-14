@@ -17,8 +17,8 @@ export const Button = styled(Link)`
   align-items: center;
   transition: all 0.2s ease-in-out;
   font-size: 20px;
-  font-family: "Inria Sans", sans-serif;
-  font-weight: 400;
+  font-family: var(--font-main);
+  font-weight: 500;
   font-style: normal;
   text-decoration: none;
   

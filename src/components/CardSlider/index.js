@@ -1,4 +1,3 @@
-import React, { useState } from "react"
 import { Button } from "../ButtonElements"
 import './CardSliderElements.css'
 import Slider from "react-slick";

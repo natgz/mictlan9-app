@@ -57,6 +57,7 @@
   font-size: 20px;
   text-align: center;
   max-width: 600px;
+  font-family: var(--font-main);
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -67,11 +68,7 @@
 }
 
 .HeroBtnWrapper {
-  /* margin-top: 35px; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  font-family: "Cormorant Garamond", serif;
+  font-family: var(--font-title);
   font-weight: 500;
   font-style: normal;
   font-size: 21px;
@@ -91,10 +88,4 @@
 .ArrowRight {
   margin-left: 8px;
   font-size: 20px;
-}
-
-.ubuntu-regular {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
