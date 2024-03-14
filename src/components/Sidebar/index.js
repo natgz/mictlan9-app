@@ -34,12 +34,16 @@ const Sidebar = ({ isOpen, toggle }) => {
               Ubicación
             </div>
           </ul>
-          {/* <div className="SideBtnWrap">
-            <div className="SidebarRoute" to="/signin">Iniciar sesión</div>
-          </div> */}
+          <div className="SideBtnWrap">
+            <button className="SidebarRoute" href="/calavera">Crea tu calavera</button>
+          </div>
         </div>
     </div>
   )
 }
+
+<nav className="NavBtn">
+              <button className="NavBtnLink" href="/calavera">Crea tu calavera</button>
+            </nav>
 
 export default Sidebar

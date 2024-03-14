@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from "react";
-import "./calavera.css"
+import "./calaveraElements.css"
 
 export default function Home() {
   const [selected, setSelected] = useState("closed");
@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      hola
+      hello
     </>
   );
 }

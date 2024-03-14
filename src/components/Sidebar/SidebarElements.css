@@ -52,6 +52,7 @@
   text-align: center;
   justify-content: center;
   padding-left: 0px;
+  margin-bottom: 0px;
 }
 
 .SidebarLink {
@@ -75,20 +76,22 @@
 .SideBtnWrap {
   display: flex;
   justify-content: center;
+  
 }
 
 .SidebarRoute {
   border-radius: 50px;
   background: #EB34DF;
   white-space: nowrap;
-  padding: 16px 64px;
+  padding: 16px 40px;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  font-family: var(--font-title);
 
   &:hover {
     transition: all 0.2s ease-in-out;
