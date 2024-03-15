@@ -1,0 +1,23 @@
+.img-box {
+  box-sizing: content-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  button {
+  width: 100%;
+}
+
+.calavera-img {
+  width: 800px;
+  height: 800px;
+  margin-top: 26px;
+  /* width: 100%; */
+  position: absolute;
+  z-index: 1;
+}
+}
+
+.titlecal {
+  text-align: center;
+}

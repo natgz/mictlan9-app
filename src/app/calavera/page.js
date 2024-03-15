@@ -19,8 +19,8 @@ export default function Home() {
 
   useEffect(()=>{
     let defaultValues = {};
-    Object.keys(traits).forEach(trait => {
-      defaultValues[trait] = Object.keys(traits[trait])[0];
+    Object.keys(traits.options).forEach(trait => {
+      defaultValues[trait] = traits.options[trait][0];
     })
     setTraitsSelected(defaultValues);
   },[])
@@ -38,7 +38,6 @@ export default function Home() {
     try{
       obj = JSON.parse(e.target.value);
     }catch(e){
-      console.log(e)
     }
     setTraitsSelected(obj);
   };
@@ -59,7 +58,6 @@ export default function Home() {
           traits={traits} />
       </Col>
       <Col>
-      <h1>Calavera</h1>
         <ImgDisplay className="imgDisplay"
           imgObj={traitsSelected} />
       </Col>

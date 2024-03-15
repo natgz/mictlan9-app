@@ -6,6 +6,7 @@ export default function ImgDisplay({imgObj}) {
 
   return (
     <div>
+      <h1 className='titlecal'>Calavera</h1>
       <Container>
         {imgObj && Object.keys(imgObj).length > 0 && 
           <ImagesSkull 
