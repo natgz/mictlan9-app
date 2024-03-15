@@ -16,7 +16,7 @@ export default function DesignsForm(props) {
   return (
     <div className='designFormContainer'>
       <h1>DesignsForm</h1>
-      <Form>
+      <Form className='formCal'>
         {Object.keys(dtraits).map((trait, index) => (
           <Form.Group controlId={`select-${index}`} key={index}>
             <Form.Label>{trait}</Form.Label>

@@ -31,22 +31,13 @@ export default function Home() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      {/* <Services /> */}
       <Gallery />
       <InfoSection {...Nosotros} />
       <CardSlider />
       <Mixology />
       <InfoSection {...Reservaciones} />
       <Location />
-      {/* <InfoSection {...Ubicacion} /> */}
       <Footer />
-      {/* <Button
-        className='fixed-button-l'
-        variant='success'
-        onClick={() => whatsapp()}
-      >
-        <i className='bi bi-whatsapp'></i>
-      </Button> */}
     </>
   );
 }
