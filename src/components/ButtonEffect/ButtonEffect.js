@@ -1,18 +1,11 @@
 import React from "react";
 import './ButtonElements.css';
+import Link from 'next/link';
 
-const ButtonEffect = ({ text }) => {
+const ButtonEffect = ({ text, linkwha }) => {
   return (
     <button className="button-effect draw meet">
-      {text}
-    </button>
-  );
-};
-
-const ButtonEffect2 = ({ text }) => {
-  return (
-    <button className="block">
-      {text}
+      <Link className="draw meet" href={`${linkwha}`}>{text}</Link>
     </button>
   );
 };

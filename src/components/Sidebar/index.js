@@ -2,6 +2,7 @@ import React from "react"
 import './SidebarElements.css'
 import { FaTimes } from "react-icons/fa"
 import Link from 'next/link'
+import ButtonEffect2 from "../ButtonEffect/ButtonEffect2.js";
 
 const Sidebar = ({ isOpen, toggle }) => {
   const containeropen = (isOpen == "closed") ? 'SidebarContainer containerclosed' : 'SidebarContainer'
@@ -20,23 +21,23 @@ const Sidebar = ({ isOpen, toggle }) => {
       </div>
         <ul className="SidebarMenu">
           <div className="SidebarLink" onClick={(e) => scrollTo(e, "nosotros")}>
-            Nosotros
+            NOSOTROS
           </div>
           <div className="SidebarLink" onClick={(e) => scrollTo(e, "menu")}>
-            Menú
+            MENÚ
           </div>
           <div className="SidebarLink" onClick={(e) => scrollTo(e, "mixologia")}>
-            Mixología
+            MIXOLOGÍA
           </div>
           <div className="SidebarLink" onClick={(e) => scrollTo(e, "reservaciones")}>
-            Reservaciones
+            RESERVACIONES
           </div>
           <div className="SidebarLink" onClick={(e) => scrollTo(e, "ubicacion")}>
-            Ubicación
+            UBICACIÓN
           </div>
         </ul>
         <div className="SideBtnWrap">
-          <button className="SidebarRoute"><Link className="NavBtnLink2" href="/calavera">Crea tu calavera</Link></button>
+          <ButtonEffect2 className="SidebarRoute" text="CREA TU CALAVERA" />
         </div>
       </div>
     </div>

@@ -133,3 +133,13 @@ a {
     color-scheme: dark;
   }
 }
+
+.fixed-button-l {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 5px 15px;
+  font-size: 40px;
+  border-radius: 50px;
+  background-color: #25d366;
+}

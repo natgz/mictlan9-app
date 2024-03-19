@@ -24,6 +24,12 @@
   }
 }
 
+.button-effect a {
+  color: var(--color-tertiary);
+  text-decoration: none;
+  
+}
+
 
 .draw {
   transition: color 0.25s;
@@ -103,6 +109,7 @@
   width: 150px;
   height: 50px;
   border: none;
+  text-decoration: none;
   background: linear-gradient( #000000, #000000);
 }
 

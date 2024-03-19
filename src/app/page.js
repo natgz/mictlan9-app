@@ -10,12 +10,14 @@ import {
   Nosotros,
 } from '../components/InfoSection/Data';
 import Footer from '../components/Footer';
-import { whatsapp } from '../components/InfoSection/Data';
+// import { whatsapp } from '../components/InfoSection/Data';
 import Gallery from '../components/Gallery';
 import Location from '../components/Location';
 import CardSlider from '../components/CardSlider';
 import Mixology from '../components/Mixology';
 import Services from '../components/Services';
+import { Button } from 'react-bootstrap';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState('closed');
@@ -25,6 +27,10 @@ export default function Home() {
     if (isOpen !== 'closed') setIsOpen('closed');
     else setIsOpen('open');
   };
+
+  const whatsapp = () => {
+    window.open("https://wa.me/5514821778", "_blank")
+  }
 
   return (
     <>
@@ -38,6 +44,7 @@ export default function Home() {
       <InfoSection {...Reservaciones} />
       <Location />
       <Footer />
+      <button className='fixed-button-l' variant='success' onClick={()=>whatsapp()}><i className="bi bi-whatsapp"></i></button>   
     </>
   );
 }

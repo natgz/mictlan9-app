@@ -66,6 +66,7 @@
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+  font-family: var(--font-subtitle);
 
   &:hover {
     color: #EB34DF;
@@ -91,7 +92,7 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  font-family: var(--font-title);
+  font-family: var(--font-subtitle);
 
   &:hover {
     transition: all 0.2s ease-in-out;
