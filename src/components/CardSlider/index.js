@@ -1,4 +1,4 @@
-import { Button } from "../ButtonElements"
+import ButtonEffect from "../ButtonEffect/ButtonEffect";
 import './CardSliderElements.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -120,16 +120,7 @@ function CardSlider() {
       </Slider>
 
       <div className="BtnWrap1">
-        <Button
-          to="home"
-          smooth='true'
-          exact="true"
-          primary='true'
-          dark='false'
-          dark2='false'
-        >
-          Ve Nuestro Menú Completo
-        </Button>
+        <ButtonEffect text="Ver Nuestro Menú Completo" />
       </div>
     </div>
   )

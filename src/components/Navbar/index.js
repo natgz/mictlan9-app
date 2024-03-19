@@ -4,8 +4,9 @@ import React, { useEffect, useState } from "react"
 import { FaBars } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
 import { animateScroll as scroll } from "react-scroll"
-import Link from 'next/link'
 import './NavbarElements.css'
+import ButtonEffect2 from "../ButtonEffect/ButtonEffect2.js";
+import Link from 'next/link';
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState("negrito")
@@ -28,6 +29,10 @@ const Navbar = ({ toggle }) => {
     element &&
       element.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
+
+  const returnHome = () => {
+    return <Link href="#"/>
+  }
 
   const activeSection = () => {
     const sections = document.querySelectorAll("InfoWrapper");
@@ -58,8 +63,8 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: "#fff" }}>
         <nav className={navbarBlack}>
           <div className="NavbarContainer">
-            <div className="NavLogo" onClick={(e) => scrollTo(e, "home")}>
-              <img src="/images/NOMBRE-MICTLAN.png" alt="MictlanLogo" />
+            <div className="NavLogo" onClick={(e) => {scrollTo(e, "home");returnHome()}}>
+              <Link className="LogoLink" href="/"><img src="/images/NOMBRE-MICTLAN.png" alt="MictlanLogo" /></Link>
             </div>
             <div className="MobileIcon" onClick={toggle}>
               <FaBars />
@@ -67,33 +72,33 @@ const Navbar = ({ toggle }) => {
             <ul className="NavMenu">
               <li className="NavItem">
                 <div className="NavLinks" onClick={(e) => scrollTo(e, "nosotros")}>
-                  Nosotros
+                  NOSOTROS
                 </div>
               </li>
               <li className="NavItem">
                 <div className="NavLinks" onClick={(e) => scrollTo(e, "menu")}>
-                  Menú
+                  MENÚ
                 </div>
               </li>
               <li className="NavItem">
                 <div className="NavLinks" onClick={(e) => scrollTo(e, "mixologia")}>
-                  Mixología
+                  MIXOLOGÍA
                 </div>
               </li>
               <li className="NavItem">
                 <div className="NavLinks" onClick={(e) => scrollTo(e, "reservaciones")}>
-                  Reservaciones
+                  RESERVACIONES
                 </div>
               </li>
               <li className="NavItem">
                 <div className="NavLinks" onClick={(e) => scrollTo(e, "ubicacion")}>
-                  Ubicación
+                  UBICACIÓN
                 </div>
               </li>
             </ul>
-            <nav className="NavBtn">
-              <button className="NavBtnLink" href="/calavera">Crea tu calavera</button>
-            </nav>
+            <div className="NavBtn">
+              <ButtonEffect2 className="NavBtnLink" text="CREA TU CALAVERA" />
+            </div>
           </div>
         </nav>
       </IconContext.Provider>

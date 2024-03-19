@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'RightGrotesk Wide Medium';
+  src: url('/fonts/RightGrotesk-WideMedium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'RightGrotesk';
+  src: url('/fonts/RightGrotesk-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'RightGrotesk Tight Medium';
+  src: url('/fonts/RightGrotesk-TightMedium.otf') format('opentype');
+}
+
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -9,9 +25,16 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --font-main: "Karla", sans-serif;
-  --font-title:  "Expletus Sans", sans-serif;
-  --font-subtitle: "Inconsolata", monospace;
+  --font-title: 'RightGrotesk Wide Medium', sans-serif;
+  --font-main: 'RightGrotesk', sans-serif;
+  --font-subtitle: 'RightGrotesk', sans-serif;
+
+  --color-main: #865DFF;
+  --color-secondary: #E384FF;
+  --color-tertiary: #FFA3FD;
+  --color-light: #F3F8FF;
+  --color-dark: #191825;
+  --color-black: #000000;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -43,6 +66,7 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {

@@ -3,6 +3,7 @@ import { Button } from "../ButtonElements"
 import { Col, Container, Row } from 'react-bootstrap';
 import './HeroElements.css'
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
+import ButtonEffect from "../ButtonEffect/ButtonEffect";
 
 function HeroSection() {
   const [hover, setHover] = useState(false)
@@ -28,26 +29,17 @@ function HeroSection() {
         <Container>
         <Row className="HeroBtnWrapper">
           <Col className="p-3 text-center">
-            <Button
-              to="menu"
-              onMouseEnter={onHover}
-              onMouseLeave={onHover}
-              primary="true"
-              dark="true"
-            >
-            Visita Nuestro Menú {hover ? <MdArrowForward className="ArrowForward"/> : <MdKeyboardArrowRight className="ArrowRight"/>}
-            </Button>
+            <ButtonEffect text="Ver Menú" /> 
           </Col>
           <Col className="p-3 text-center">
-            <Button
-              to="reservaciones"
-              onMouseEnter={onHover2}
-              onMouseLeave={onHover2}
-              primary="true"
-              dark="true"
+            <ButtonEffect text="Reservación" />
+          {/* <button 
+            class="draw meet button-effect" 
+            onMouseEnter={onHover2}
+            onMouseLeave={onHover2}
             >
-              Reservación {hover2 ? <MdArrowForward className="ArrowForward"/> : <MdKeyboardArrowRight className="ArrowRight"/>}
-            </Button>
+            Reservación {hover2 ? <MdArrowForward className="ArrowForward"/> : <MdKeyboardArrowRight className="ArrowRight"/>}
+            </button> */}
           </Col>
         </Row>
         </Container>

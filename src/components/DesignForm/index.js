@@ -14,20 +14,21 @@ export default function DesignsForm(props) {
   };
 
   return (
-    <div className='designFormContainer'>
-      <h1>DesignsForm</h1>
+    <div className='CalFormContainer'>
+      <h1>¡Crea tu Calavera!</h1>
+      <p>Selecciona los elementos <br /> que deseas para tu calavera.</p>
       <Form className='formCal'>
         {Object.keys(dtraits).map((trait, index) => (
           <Form.Group controlId={`select-${index}`} key={index}>
             <Form.Label>{trait}</Form.Label>
-            <Form.Control as="select" name={trait} value={values[trait] ?? ""} onChange={handleInputChange}>
+            <Form.Select name={trait} value={values[trait] ?? ""} onChange={handleInputChange}>
               {dtraits[trait].map((option, key) => {
                 return (<option key={key} value={option}>{option}</option>)
               })}
-            </Form.Control>
+            </Form.Select>
           </Form.Group>
         ))}
       </Form>
-    </div>
+    </div>  
   );
 }

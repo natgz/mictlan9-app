@@ -16,7 +16,7 @@
 }
 
 .ScrollNav {
-  background: #000;
+  background: #000000d5;
 }
 
 .NavbarContainer {
@@ -29,7 +29,7 @@
   position: sticky;
 }
 
-.NavLogo {
+.NavLogo , .LogoLink {
   justify-self: flex-start;
   cursor: pointer;
   display: flex;
@@ -77,9 +77,9 @@
   padding: 0 1.2rem;
   height: 100%;
   cursor: pointer;
-  font-size: larger;
+  font-size: 15PX;
   font-family: var(--font-subtitle);
-  font-weight: 300;
+  font-weight: 200;
   font-style: normal;
 
   &:hover,
@@ -102,14 +102,10 @@
   background: #EB34DF;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #fff;
-  outline: none;
-  border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: var(--font-title);
+  font-size: 15px;
+  font-family: var(--font-subtitle);
   font-weight: 500;
   font-style: normal;
 
@@ -118,4 +114,11 @@
     background: #f53127;
     color: #94ef71;
   }
+}
+
+.NavBtnLink2 {
+  font-family: var(--font-subtitle);
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
 }

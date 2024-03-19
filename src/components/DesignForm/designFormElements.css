@@ -1,19 +1,40 @@
-.designFormContainer h1 {
-  display: flex;
-  align-items: center;
+.CalFormContainer {
+  margin: 50px 0px;
   justify-content: center;
-  align-self: center;
+  align-items: center;
+  height: 80vh;
 }
 
-.designForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 50px;
+.CalFormContainer h1 {
+  margin-bottom: 17px;
+  font-size: 2.9rem;
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-title);
+}
+
+.CalFormContainer p {
+  margin-bottom: 17px;
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-title);
+}
+
+.form-label {
+  color: #fff;
+  font-size: 1rem;
 }
 
 .formCal {
-  display: block;
-  margin: 0px 300px 0px 300px
+  max-width: 60%;
+  margin: auto;
+}
+
+#option {
+  margin: 60px 50px;
+}
+
+.form-control {
+  padding: 10px;
 }

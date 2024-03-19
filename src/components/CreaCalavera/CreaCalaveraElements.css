@@ -1,0 +1,21 @@
+.CrearCalavera {
+  display: block;
+  columns: 2;
+}
+
+.container-fluid {
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 80px 0px 0px 0px;
+  background-image: url(/images/background-calavera.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  /* @media screen and (max-width: 1305px) {
+    padding: 0px 0px 0px 0px;
+    
+  } */
+}

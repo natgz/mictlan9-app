@@ -1,6 +1,6 @@
 import mergeImages from 'merge-images';
 import { useState } from 'react';
-import './calaveraimg.css'
+import './imagesSkullElements.css'
 
 export default function Images({ imgObject, controls, size, viewJSON }) {
 

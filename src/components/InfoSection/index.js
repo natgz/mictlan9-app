@@ -1,5 +1,5 @@
 import React from "react"
-import { Button } from "../ButtonElements"
+import ButtonEffect from "../ButtonEffect/ButtonEffect";
 import './InfoElements.css'
 
 const InfoSection = ({
@@ -31,16 +31,7 @@ const InfoSection = ({
                 <h1 className={heading}>{headline}</h1>
                 <p className={text}>{description}</p>
                 <div className="BtnWrap">
-                  <Button
-                    to="home"
-                    smooth={true}
-                    exact="true"
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
+                  <ButtonEffect text={buttonLabel} />
                 </div>
               </div>
             </div>

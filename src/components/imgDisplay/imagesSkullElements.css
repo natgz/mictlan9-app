@@ -1,0 +1,25 @@
+.img-box {
+  box-sizing: content-box;
+  justify-content: center;
+
+  button {
+  width: 100%;
+}
+
+.calavera-img {
+  width: 550px;
+  height: 550px;
+  margin: 30px 50px;
+  position: absolute;
+  z-index: 1;
+}
+}
+
+.imgDisplayContainer {
+  width: 600px;
+  height: 600px;
+}
+
+.row {
+  margin: 90px 0px;
+}

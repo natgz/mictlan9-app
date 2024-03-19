@@ -1,4 +1,4 @@
-import { Button } from "../ButtonElements"
+import ButtonEffect from "../ButtonEffect/ButtonEffect";
 import './MixologyElements.css';
 import { Stack, Image, Container, Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -89,16 +89,7 @@ function Mixology() {
       </Row>
 
       <div className="BtnWrap1">
-        <Button
-          to="home"
-          smooth='true'
-          exact="true"
-          primary='true'
-          dark='false'
-          dark2='false'
-        >
-          Ve menu de mixologías
-        </Button>
+        <ButtonEffect text="Ver Carta Completa" />
       </div>
     </Container>
   );
