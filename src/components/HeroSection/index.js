@@ -28,10 +28,10 @@ function HeroSection() {
         <p className="HeroP">Sumérgete en la magia de Mictlán.</p>
         <Container>
         <Row className="HeroBtnWrapper">
-          <Col className="p-3 text-center">
+          <Col className="text-center">
             <ButtonEffect text="Ver Menú" /> 
           </Col>
-          <Col className="p-3 text-center">
+          <Col className="text-center">
             <ButtonEffect text="Reservación" />
           {/* <button 
             class="draw meet button-effect" 

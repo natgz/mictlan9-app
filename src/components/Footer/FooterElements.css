@@ -32,6 +32,10 @@
   color: white;
   font-size: 15px;
   align-self: center;
+
+  @media screen and (max-width: 450px){
+    font-size: 12px;
+  }
 }
 
 .footerLinks h4 {
@@ -75,6 +79,7 @@
 .footerSocial h4 {
   font-family: var(--font-title);
   color: #fff;
+  text-align: center;
   @media screen and (max-width: 450px){
     font-size: 14px;
   }
@@ -109,6 +114,10 @@
   font-size: 18px;
   padding-top: 45px;
   text-align: center;
+
+  @media screen and (max-width: 450px){
+    font-size: 14px;
+  }
 }
 
 .WebsiteRights {

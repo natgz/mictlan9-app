@@ -13,6 +13,8 @@
   font-weight: 500;
   position: relative;
   vertical-align: middle;
+  width: 147px;
+  height: 76px;
 
   &::before,
   &::after {
