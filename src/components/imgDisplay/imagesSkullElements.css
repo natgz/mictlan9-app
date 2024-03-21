@@ -9,9 +9,24 @@
 .calavera-img {
   width: 550px;
   height: 550px;
-  margin: 30px 50px;
+  margin: 50px 0px;
   position: absolute;
   z-index: 1;
+
+  @media screen and (max-width: 1305px){
+      width: 350px;
+      height: 350px;
+  } 
+
+  @media screen and (max-width: 750px){
+      width: 250px;
+      height: 250px;
+  }
+
+  @media screen and (max-width: 556px){
+      width: 160px;
+      height: 160px;
+  }
 }
 }
 
@@ -22,4 +37,13 @@
 
 .row {
   margin: 90px 0px;
+}
+
+
+
+@media screen and (max-width: 750px){
+  .calavera-img {
+    width: 250px;
+    height: 250px;
+  }
 }

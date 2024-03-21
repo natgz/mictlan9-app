@@ -11,6 +11,14 @@
   color: #fff;
   text-align: center;
   font-family: var(--font-title);
+
+  @media screen and (max-width: 750px){
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 555px){
+    font-size: 1rem;
+  }
 }
 
 .CalFormContainer p {
@@ -19,11 +27,27 @@
   color: #fff;
   text-align: center;
   font-family: var(--font-title);
+
+  @media screen and (max-width: 750px){
+    font-size: .75rem;
+  }
+
+  @media screen and (max-width: 555px){
+    font-size: .55rem;
+  }
 }
 
 .form-label {
   color: #fff;
   font-size: 1rem;
+
+  @media screen and (max-width: 750px){
+    font-size: .75rem;
+  }
+
+  @media screen and (max-width: 555px){
+    font-size: .55rem;
+  }
 }
 
 .formCal {
@@ -35,6 +59,21 @@
   margin: 60px 50px;
 }
 
-.form-control {
+.form-select {
   padding: 10px;
+
+  @media screen and (max-width: 750px){
+    padding: 0.1rem 0rem 0.1rem 0.7rem !important;
+    font-size: .75rem !important;
+    font-weight: 400;
+    line-height: 1.5rem !important;
+    
+  }
+
+  @media screen and (max-width: 555px){
+    font-size: .55rem !important;
+    font-weight: 400;
+    line-height: 1rem !important;
+    
+  }
 }

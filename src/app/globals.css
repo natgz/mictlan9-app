@@ -136,10 +136,12 @@ a {
 
 .fixed-button-l {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
-  padding: 5px 15px;
+  bottom: 25px;
+  left: 40px;
+  padding: 4px 15px;
   font-size: 40px;
   border-radius: 50px;
+  border: none;
+  text-decoration: none;
   background-color: #25d366;
 }

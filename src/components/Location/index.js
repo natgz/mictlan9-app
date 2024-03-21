@@ -101,16 +101,18 @@ function Location() {
           </Card>
         </Col>
         <Col xs={12} md={6} xl={6}>
-          <div className='MapResponsive'>
-            <iframe 
-              width="500" 
-              height="320" 
-              style={{border:"0"}} 
-              loading="lazy" 
-              allowFullScreen={false}
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.201744203533!2d-100.19447651350211!3d25.763899091651933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662ebed10d1258b%3A0xddb899ae0870f576!2sPlaza%20Sendero%20La%20Fe!5e0!3m2!1sen!2smx!4v1709854640273!5m2!1sen!2smxhttps://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.201744203533!2d-100.19447651350211!3d25.763899091651933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662ebed10d1258b%3A0xddb899ae0870f576!2sPlaza%20Sendero%20La%20Fe!5e0!3m2!1sen!2smx!4v1709854640273!5m2!1sen!2smx">
-            </iframe>   
-            <Row>
+          <div className='MapArea'>
+            <div className="MapResponsive">
+              <iframe className="responsive-iframe"
+                width="660" 
+                height="420" 
+                style={{border:"0"}} 
+                loading="lazy" 
+                allowFullScreen={false}
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.201744203533!2d-100.19447651350211!3d25.763899091651933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662ebed10d1258b%3A0xddb899ae0870f576!2sPlaza%20Sendero%20La%20Fe!5e0!3m2!1sen!2smx!4v1709854640273!5m2!1sen!2smxhttps://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.201744203533!2d-100.19447651350211!3d25.763899091651933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662ebed10d1258b%3A0xddb899ae0870f576!2sPlaza%20Sendero%20La%20Fe!5e0!3m2!1sen!2smx!4v1709854640273!5m2!1sen!2smx">
+              </iframe>  
+            </div> 
+            <Row className="MapTextArea">
               <Col xs={12} md={6}>
                 <div className="MapText">
                   <h5>Plaza Sendero La Fe</h5>

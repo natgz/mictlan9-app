@@ -49,14 +49,14 @@ export default function CreaCalavera() {
   return (
     <Container fluid>
       <Row>
-        <Col lg={12} xl={6} >
+        <Col>
           <Form 
             handleInputChange={handleInputChange}
             handleTextChange={handleTextChange}
             values={traitsSelected}
             traits={traits} />
         </Col>
-        <Col lg={12} xl={6}>
+        <Col style={{ height:"700px"}}>
           <ImgDisplay imgObj={traitsSelected} />
         </Col>
       </Row>
