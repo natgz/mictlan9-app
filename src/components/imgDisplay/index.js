@@ -7,16 +7,12 @@ export default function ImgDisplay({imgObj}) {
 
   return (
     <Container fluid>
-      <Row>
-        <Col>
-          {imgObj && Object.keys(imgObj).length > 0 && 
-            <ImagesSkull 
-            imgObject={imgObj}
-            controls={false}
-            size="100%"
-            viewJSON={false}/>}
-        </Col>
-      </Row>
+      {imgObj && Object.keys(imgObj).length > 0 && 
+        <ImagesSkull 
+        imgObject={imgObj}
+        controls={false}
+        size="100%"
+        viewJSON={false}/>}
     </Container>
   );
 

@@ -1,8 +1,10 @@
 .CalFormContainer {
   margin: 50px 0px;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
+
+  /* @media screen and (max-width: 555px){
+    margin: 50px 0px;
+    height: 400px;
+  } */
 }
 
 .CalFormContainer h1 {

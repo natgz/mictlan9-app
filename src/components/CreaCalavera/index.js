@@ -47,16 +47,16 @@ export default function CreaCalavera() {
   }, [selected]);
 
   return (
-    <Container fluid>
-      <Row>
-        <Col>
+    <Container fluid className="main">
+      <Row  className="rowcontainer">
+        <Col className="formCol">
           <Form 
             handleInputChange={handleInputChange}
             handleTextChange={handleTextChange}
             values={traitsSelected}
             traits={traits} />
         </Col>
-        <Col style={{ height:"700px"}}>
+        <Col className="imgCol">
           <ImgDisplay imgObj={traitsSelected} />
         </Col>
       </Row>
