@@ -48,61 +48,55 @@ function CardSlider() {
       name: 'title1',
       title: 'title1',
       description: 'description1',
-      img: './images/food1.jpg'
+      img: './images/comida1.jpeg'
     },
     {
       name: 'title2',
       title: 'title2',
       description: 'description2',
-      img: './images/food2.jpg'
+      img: './images/comida2.jpeg'
     },
     {
       name: 'title3',
       title: 'title3',
       description: 'description3',
-      img: './images/food3.jpg'
+      img: './images/comida3.jpeg'
     },
     {
       name: 'title4',
       title: 'title4',
       description: 'description4',
-      img: './images/food4.jpg'
+      img: './images/comida4.jpeg'
     },
     {
       name: 'title5',
       title: 'title5',
       description: 'description5',
-      img: './images/food5.jpg'
+      img: './images/comida5.jpeg'
     },
     {
       name: 'title5',
       title: 'title5',
       description: 'description5',
-      img: './images/food6.jpg'
+      img: './images/comida6.jpeg'
     },
     {
       name: 'title5',
       title: 'title5',
       description: 'description5',
-      img: './images/food7.jpg'
+      img: './images/comida7.jpeg'
     },
     {
       name: 'title5',
       title: 'title5',
       description: 'description5',
-      img: './images/food8.jpg'
+      img: './images/comida8.jpeg'
     },
     {
       name: 'title5',
       title: 'title5',
       description: 'description5',
-      img: './images/food9.jpg'
-    },
-    {
-      name: 'title5',
-      title: 'title5',
-      description: 'description5',
-      img: './images/food10.jpg'
+      img: './images/comida9.jpeg'
     }
   ]
 
