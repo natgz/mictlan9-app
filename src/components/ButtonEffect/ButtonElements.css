@@ -126,8 +126,8 @@
   position: absolute;
   left: -2px;
   top: -2px;
-  background: linear-gradient(45deg, #F72798, #49108B, #00ff00,#EBF400, #F57D1F, #fb0094, 
-    #7E30E1, #00ff00,#ffff00, #F57D1F);
+  background: linear-gradient(45deg, #F7FD04, #F9B208, #F98404,#FC5404, #F57D1F, #fb0094, 
+    #00541A, #00ff00,#ffff00, #CE7D00);
   background-size: 400%;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
