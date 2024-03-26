@@ -60,6 +60,11 @@ export default function CreaCalavera() {
           <ImgDisplay imgObj={traitsSelected} />
         </Col>
       </Row>
+      <Row  className="rowcontainer2">
+        <Col className="imgCol2">
+          <ImgDisplay imgObj={traitsSelected} />
+        </Col>
+      </Row>
     </Container>
   );
 }

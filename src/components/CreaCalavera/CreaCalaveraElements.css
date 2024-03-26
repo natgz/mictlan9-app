@@ -13,16 +13,36 @@
     position: relative;
 
     @media screen and (max-width: 750px) {
-        height: 80vh;
+      height: 159vh;
     }
 }
 
 .imgCol {
   padding: 0px 0px 0px 0px !important;
   max-height: 500px;
+
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
+  
 }
 
 .formCol {
   padding: 0px 0px 0px 0px !important;
   max-height: 500px;
+}
+
+.rowcontainer2 {
+  height: 200px;
+}
+
+.imgCol2 {
+  padding: 0px 0px 0px 0px !important;
+  max-height: 500px;
+  display: none;
+
+  @media screen and (max-width: 750px) {
+    display: contents;
+  }
+
 }

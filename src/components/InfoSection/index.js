@@ -14,13 +14,8 @@ const InfoSection = ({
   buttonLabel,
   img,
   alt,
-  wha,
-  primary,
-  dark,
-  dark2
+  linkBtn
 }) => {
-
-  // console.log('fghgjgfghfghfghfghfghfghfgh',wha)
   return (
     <>
       <div className={theme} id={id}>
@@ -33,7 +28,7 @@ const InfoSection = ({
                 <h1 className={heading}>{headline}</h1>
                 <p className={text}>{description}</p>
                 <div className="BtnWrap">
-                  <ButtonEffect linkwha={wha} text={buttonLabel} />
+                  <ButtonEffect  text={buttonLabel} linkBtn={linkBtn}/>
                 </div>
               </div>
             </div>

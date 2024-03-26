@@ -6,11 +6,29 @@ import ButtonEffect2 from "../ButtonEffect/ButtonEffect2.js";
 
 const Sidebar = ({ isOpen, toggle }) => {
   const containeropen = (isOpen == "closed") ? 'SidebarContainer containerclosed' : 'SidebarContainer'
+  // const myTimeout = setTimeout(scrollTo, 3000)
   const scrollTo = (e, a) => {
-    let element = document.getElementById(a);
-    e.preventDefault();
-    element &&
-      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (window.location.pathname === "/") {
+      console.log("home", window.location.pathname)
+      let element = document.getElementById(a);
+      e.preventDefault();
+      element &&
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else {
+      window.location.href = "/"
+  
+      // const hola = (e, a) => {
+      //   console.log("nothome", window.location.pathname)
+      //   console.log(a)
+      //   let element = document.getElementById(a);
+      //   e.preventDefault();
+      //   element &&
+      //     element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // }
+
+      // setTimeout(hola, 5000);
+
+    }
   };
   
   return (

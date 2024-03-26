@@ -4,12 +4,12 @@ import { useState, useEffect } from "react";
 import CreaCalavera from "../../components/CreaCalavera";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Sidebar from "../../components/Sidebar";
 
 export default function CalaveraSection() {
   const [isOpen, setIsOpen] = useState('closed');
 
   const toggle = () => {
-    console.log('toggle');
     if (isOpen !== 'closed') setIsOpen('closed');
     else setIsOpen('open');
   };
@@ -17,6 +17,7 @@ export default function CalaveraSection() {
   return (
     <>
       <Navbar toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
       <CreaCalavera />
       <Footer />
     </>

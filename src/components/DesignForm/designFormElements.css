@@ -17,10 +17,6 @@
   @media screen and (max-width: 750px){
     font-size: 1.5rem;
   }
-
-  @media screen and (max-width: 555px){
-    font-size: 1rem;
-  }
 }
 
 .CalFormContainer p {
@@ -33,10 +29,6 @@
   @media screen and (max-width: 750px){
     font-size: .75rem;
   }
-
-  @media screen and (max-width: 555px){
-    font-size: .55rem;
-  }
 }
 
 .form-label {
@@ -45,10 +37,6 @@
 
   @media screen and (max-width: 750px){
     font-size: .75rem;
-  }
-
-  @media screen and (max-width: 555px){
-    font-size: .55rem;
   }
 }
 
@@ -69,13 +57,6 @@
     font-size: .75rem !important;
     font-weight: 400;
     line-height: 1.5rem !important;
-    
-  }
-
-  @media screen and (max-width: 555px){
-    font-size: .55rem !important;
-    font-weight: 400;
-    line-height: 1rem !important;
     
   }
 }

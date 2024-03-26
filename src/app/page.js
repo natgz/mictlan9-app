@@ -23,13 +23,12 @@ export default function Home() {
   const [isOpen, setIsOpen] = useState('closed');
 
   const toggle = () => {
-    console.log('toggle');
     if (isOpen !== 'closed') setIsOpen('closed');
     else setIsOpen('open');
   };
 
   const whatsapp = () => {
-    window.open("https://wa.me/5514821778", "_blank")
+    window.open("https://wa.me/8129397423", "_blank")
   }
 
   return (

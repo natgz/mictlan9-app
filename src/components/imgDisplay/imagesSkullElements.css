@@ -2,7 +2,7 @@
 .calavera-img {
   width: 550px;
   height: 550px;
-  margin: 50px 0px;
+  margin: 130px 0px;
   position: absolute;
   z-index: 1;
 
@@ -17,13 +17,21 @@
   }
 
   @media screen and (max-width: 750px){
-      width: 250px;
-      height: 250px;
+    margin: 110px;
   }
 
   @media screen and (max-width: 556px){
-      width: 160px;
-      height: 160px;
+      width: 260px;
+      height: 260px;
+      margin: 60px;
+      /* right: 16vw; */
+  }
+
+  @media screen and (max-width: 400px){
+      width: 200px;
+      height: 200px;
+      margin: 40px;
+      /* right: 16vw; */
   }
 }
 
