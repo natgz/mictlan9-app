@@ -6,6 +6,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import { traits } from '../traits.js';
 import Form from '../DesignForm';
 import ImgDisplay from '../imgDisplay';
+import ButtonEffect from "../ButtonEffect/ButtonEffect";
 
 export default function CreaCalavera() {
   const [selected, setSelected] = useState("closed");
@@ -55,6 +56,9 @@ export default function CreaCalavera() {
             handleTextChange={handleTextChange}
             values={traitsSelected}
             traits={traits} />
+          <Container className="BtnContainer">
+            <ButtonEffect text="Guardar Calavera"/>
+          </Container>
         </Col>
         <Col className="imgCol">
           <ImgDisplay imgObj={traitsSelected} />

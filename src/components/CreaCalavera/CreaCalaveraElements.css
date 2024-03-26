@@ -6,15 +6,23 @@
 .main {
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: auto;
     padding: 100px 0px 0px 0px;
     background-image: url(/images/background-calavera.png);
     background-size: cover;
     position: relative;
 
     @media screen and (max-width: 750px) {
-      height: 159vh;
+      height: 160vh;
     }
+
+    /* @media screen and (max-width: 550px) {
+      height: 120vh;
+    } */
+
+    /* @media screen and (max-width: 430px) {
+      height: 160vh;
+    } */
 }
 
 .imgCol {
@@ -30,6 +38,7 @@
 .formCol {
   padding: 0px 0px 0px 0px !important;
   max-height: 500px;
+  display: inline-table;
 }
 
 .rowcontainer2 {
@@ -45,4 +54,12 @@
     display: contents;
   }
 
+}
+
+.calaveraBtn {
+  display: block;
+}
+
+.BtnContainer {
+  display: flex;
 }

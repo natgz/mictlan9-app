@@ -12,9 +12,12 @@
   font-size: inherit;
   font-weight: 500;
   position: relative;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   width: 147px;
   height: 76px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   &::before,
   &::after {
