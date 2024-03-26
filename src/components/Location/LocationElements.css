@@ -1,7 +1,7 @@
 .LocationContainer {
   padding: 20px;
   z-index: 1;
-  background: black;
+  background: var(--color-black);
 }
 
 .LocationTitle {

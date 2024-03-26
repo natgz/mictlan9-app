@@ -1,13 +1,13 @@
-/* .InfoContainer {
+.InfoContainer {
   background: linear-gradient(
     0deg,
-    rgba(36, 35, 36, 0.699) 100%,
+    rgba(0, 0, 0, 0.699) 100%,
     rgba(204, 204, 204, 0.171) 100%
   );
-} */
+}
 
 .lightBg {
-  /* background-image: url('/images/background.webp'); */
+  background-image: url('/images/muro-dorado.jpg');
   background-color: black;
   background-repeat: no-repeat;
   background-position: center;
@@ -130,7 +130,7 @@
 }
 
 .TopLine {
-  color: #B983FF;
+  color: var(--color-main);
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;

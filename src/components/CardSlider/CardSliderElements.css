@@ -1,6 +1,6 @@
 .CardSliderContainer {
-  background-color: rgb(0, 0, 0);
-  border: 50px solid #000;
+  background-color: var(--color-black);
+  border: 50px solid var(--color-black);
 }
 
 .CardSliderTitle {

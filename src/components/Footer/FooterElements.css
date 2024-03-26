@@ -1,6 +1,5 @@
 .FooterContainer {
-  background-color: black;
-  align-content: column;
+  background: linear-gradient(#030008, #030008c7);
 }
 
 .FooterWrap {

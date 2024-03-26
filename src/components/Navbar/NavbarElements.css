@@ -84,7 +84,7 @@
 
   &:hover,
   &.active{
-    border-bottom: solid 1px #EB34DF;
+    border-bottom: solid 1px var(--color-main);
   }
 }
 

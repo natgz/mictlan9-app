@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function Gallery() {
   return (
-    <Container className='bg-black p-5'>
+    <Container className='p-5'>
       <div className='galleryTitle'>
         <h1>EXPERIENCIA MICTLÁN</h1>
       </div>

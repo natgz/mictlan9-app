@@ -57,7 +57,7 @@ export default function CreaCalavera() {
             values={traitsSelected}
             traits={traits} />
           <Container className="BtnContainer">
-            <ButtonEffect text="Guardar Calavera"/>
+            <ButtonEffect text="Guardar Calavera" linkBtn="https://github.com/natgz/mictlan9-app/commits/main/"/>
           </Container>
         </Col>
         <Col className="imgCol">

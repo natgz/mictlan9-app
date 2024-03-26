@@ -5,11 +5,12 @@
   padding: 5%;
   min-height: auto;
   z-index: 1;
-  background: linear-gradient(
+  background:  linear-gradient(#05040561, #030008c7);
+  /* background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.568) 100%,
     rgba(204, 204, 204, 0.171) 100%
-  );
+  ); */
 
   @media screen and (max-width: 768px) {
     padding: 10px 0px 0px 0px;

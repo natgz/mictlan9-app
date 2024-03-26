@@ -29,12 +29,15 @@
   --font-main: 'RightGrotesk', sans-serif;
   --font-subtitle: 'RightGrotesk', sans-serif;
 
-  --color-main: #865DFF;
-  --color-secondary: #E384FF;
-  --color-tertiary: #FFA3FD;
+  /* --color-main: #865DFF; */
+  --color-main: #cfa965;
+  /* --color-secondary: #E384FF; */
+  --color-secondary: #53a04f;
+  /* --color-tertiary: #FFA3FD; */
+  --color-tertiary: #a7c280;
   --color-light: #F3F8FF;
   --color-dark: #191825;
-  --color-black: #000000;
+  --color-black: #030008;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,

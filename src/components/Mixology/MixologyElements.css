@@ -1,18 +1,19 @@
-.container {
+.mixCont {
   max-width: fit-content!important;
+  background:  linear-gradient(#030008ea, #030008);
 }
 
 .MixologyTitle h1 {
   font-size: 50px;
   font-family: var(--font-title);
-  color: #fff;
+  color: var(--color-light);
   margin: 50px 0px;
   text-align: center;
 }
 
 .mixologyText {
   text-align: center;
-  color: white;
+  color: var(--color-light);
 }
 
 .mixologyText h1 {
@@ -20,7 +21,7 @@
   letter-spacing: 1px;
   margin: 20px;
   font-family: var(--font-subtitle);
-  color: #ff83ff;
+  color: var(--color-main);
 }
 
 .mixologyText h3 {

@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 function Mixology() {
   return (
-    <Container className='bg-black p-5' id="mixologia">
+    <Container className='mixCont p-5' id="mixologia">
       <div className='MixologyTitle'>
         <h1>Mixología</h1>
       </div>
