@@ -6,7 +6,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import { traits } from '../traits.js';
 import Form from '../DesignForm';
 import ImgDisplay from '../imgDisplay';
-// import ButtonEffect from "../ButtonEffect/ButtonEffect";
+import mergeImages from 'merge-images';
 
 export default function CreaCalavera() {
   const [selected, setSelected] = useState("closed");
@@ -47,10 +47,46 @@ export default function CreaCalavera() {
     LocalStoragee()
   }, [selected]);
 
-  const viewJSON = (nftObject) => {
-    setJsonObj(nftObject);
-    setModalOpen(true);
-  };
+  // const viewJSON = (nftObject) => {
+  //   setJsonObj(nftObject);
+  //   setModalOpen(true);
+  // };
+
+  const imgArray = Object.keys(traitsSelected)
+  
+  .filter(v=>{
+      try{
+        return require(`../../app/images/${v}/${traitsSelected[v]}.png`);
+      }catch(e){
+        return false;
+      }
+    })
+    .map(e=>{
+      return require(`../../app/images/${e}/${traitsSelected[e]}.png`)});
+
+  const download = () => {
+    console.log(imgArray)
+
+    const imgSrcArray = imgArray.map((img, i)=>{
+      return img.default.src
+    })
+    
+    mergeImages(imgSrcArray).then((b64) => {
+      downloadImg(b64, "image", ".png");
+    }).catch((a) => {
+      console.log("a", a )
+    })
+  }
+  
+
+  const downloadImg = (b64, fileName, format) =>{
+    console.log(b64,fileName, format)
+    const a = document.createElement("a");
+    a.href = `${b64}`;
+    a.download = `${fileName}${format}`;
+    a.click();
+  }
+
 
   return (
     <Container fluid className="main">
@@ -62,10 +98,18 @@ export default function CreaCalavera() {
             values={traitsSelected}
             traits={traits} />
           <Container className="BtnContainer">
-            {/* <ButtonEffect text="Guardar Calavera" linkBtn="https://github.com/natgz/mictlan9-app/commits/main/"/> */}
-            <button className="button-effect draw meet" >
-              Guardar Calavera
-            </button>
+            <div style={{ display: 'contents' }}>
+              <button 
+              className="button-effect draw meet"
+              variant="contained" 
+              size="small"
+              sx={{ borderRadius: '0px', minWidth: '0px' }}
+              onClick={() => {
+                download();
+              }}  >
+                Guardar Calavera
+              </button>
+            </div>
           </Container>
         </Col>
         <Col className="imgCol">
