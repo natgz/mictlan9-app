@@ -10,9 +10,9 @@ export default function ImgDisplay({imgObj}) {
       {imgObj && Object.keys(imgObj).length > 0 && 
         <ImagesSkull 
         imgObject={imgObj}
-        controls={false}
+        controls={true}
         size="100%"
-        viewJSON={false}/>}
+        viewJSON={true}/>}
     </Container>
   );
 

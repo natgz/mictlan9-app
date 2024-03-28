@@ -6,7 +6,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import { traits } from '../traits.js';
 import Form from '../DesignForm';
 import ImgDisplay from '../imgDisplay';
-import ButtonEffect from "../ButtonEffect/ButtonEffect";
+// import ButtonEffect from "../ButtonEffect/ButtonEffect";
 
 export default function CreaCalavera() {
   const [selected, setSelected] = useState("closed");
@@ -47,6 +47,11 @@ export default function CreaCalavera() {
     LocalStoragee()
   }, [selected]);
 
+  const viewJSON = (nftObject) => {
+    setJsonObj(nftObject);
+    setModalOpen(true);
+  };
+
   return (
     <Container fluid className="main">
       <Row  className="rowcontainer">
@@ -57,7 +62,10 @@ export default function CreaCalavera() {
             values={traitsSelected}
             traits={traits} />
           <Container className="BtnContainer">
-            <ButtonEffect text="Guardar Calavera" linkBtn="https://github.com/natgz/mictlan9-app/commits/main/"/>
+            {/* <ButtonEffect text="Guardar Calavera" linkBtn="https://github.com/natgz/mictlan9-app/commits/main/"/> */}
+            <button className="button-effect draw meet" >
+              Guardar Calavera
+            </button>
           </Container>
         </Col>
         <Col className="imgCol">

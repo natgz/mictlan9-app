@@ -35,6 +35,15 @@
   }
 }
 
+/* .img-box {
+  box-sizing: content-box;
+  position: relative;
+  display: flex;
+  button {
+    width: 100%;
+  }
+} */
+
 /* .imgDisplayContainer {
   width: 600px;
   height: 600px;

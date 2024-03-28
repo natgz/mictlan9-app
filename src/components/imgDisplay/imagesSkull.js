@@ -1,6 +1,7 @@
 import mergeImages from 'merge-images';
 import { useState } from 'react';
-import './imagesSkullElements.css'
+import './imagesSkullElements.css';
+import { Button } from 'react-bootstrap';
 
 export default function Images({ imgObject, controls, size, viewJSON }) {
 
@@ -17,13 +18,22 @@ export default function Images({ imgObject, controls, size, viewJSON }) {
       return require(`../../app/images/${e}/${imgObject[e]}.png`)});
 
   const download = () => {
-    mergeImages(imgArray).then((b64) => {
+    console.log(imgArray)
+
+    const imgSrcArray = imgArray.map((img, i)=>{
+      return img.default.src
+    })
+    
+    mergeImages(imgSrcArray).then((b64) => {
       downloadImg(b64, "image", ".png");
-    });
+    }).catch((a) => {
+      console.log("a", a )
+    })
   }
   
 
   const downloadImg = (b64, fileName, format) =>{
+    console.log(b64,fileName, format)
     const a = document.createElement("a");
     a.href = `${b64}`;
     a.download = `${fileName}${format}`;
@@ -40,13 +50,13 @@ export default function Images({ imgObject, controls, size, viewJSON }) {
           onClick={() => {
             download();
           }} />
-        <Button 
+        {/* <Button 
           variant="contained"
           size="small"
           sx={{ borderRadius: '0px', minWidth: '0px' }}
           onClick={() => {
             viewJSON(imgObject);
-          }} />
+          }} /> */}
       </div>
     )
   }
