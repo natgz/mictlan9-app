@@ -1,3 +1,5 @@
+import { FaWhatsapp } from "react-icons/fa"
+
 export const Nosotros = {
   id: "nosotros",
   theme: "lightBg",
@@ -26,7 +28,7 @@ export const Reservaciones = {
   rows: "InfoRow1",
   topLine: "Reservaciones",
   headline: "Asegura tu lugar",
-  description: "Xolotl, el dios guía, ayuda a las almas a pasar por los peligros y obstáculos en su travesía por Mictlán, el inframundo..",
+  description: "Xolotl, el dios guía, ayuda a las almas a pasar por los peligros y obstáculos en su travesía por Mictlán, el inframundo.. Contactanos a traves de Whatsapp",
   buttonLabel: "Reserva ahora mismo",
   wha: true,
   linkBtn:"https://wa.me/8129397423",

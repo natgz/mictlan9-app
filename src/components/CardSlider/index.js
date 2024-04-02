@@ -107,15 +107,15 @@ function CardSlider() {
         {data.map((item) => (
           <div key={item.name} className="CardSliderExtra">
             <img src={item.img} alt={item.title} className="img"/>
-              <h2 className="title">{item.title}</h2>
-              <p className="description">{item.description}</p>
+              {/* <h2 className="title">{item.title}</h2>
+              <p className="description">{item.description}</p> */}
           </div>
         ))}
       </Slider>
 
-      <div className="BtnWrap1">
+      {/* <div className="BtnWrap1">
         <ButtonEffect text="Ver Nuestro Menú Completo" />
-      </div>
+      </div> */}
     </div>
   )
 }

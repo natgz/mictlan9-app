@@ -50,7 +50,15 @@
 }
 
 
-.MapText p,h5 {
+.MapText p {
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-subtitle);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.MapText h5 {
   color: #fff;
   text-align: center;
   font-family: var(--font-subtitle);

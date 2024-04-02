@@ -65,8 +65,6 @@ export default function CreaCalavera() {
       return require(`../../app/images/${e}/${traitsSelected[e]}.png`)});
 
   const download = () => {
-    console.log(imgArray)
-
     const imgSrcArray = imgArray.map((img, i)=>{
       return img.default.src
     })
@@ -78,7 +76,6 @@ export default function CreaCalavera() {
     })
   }
   
-
   const downloadImg = (b64, fileName, format) =>{
     console.log(b64,fileName, format)
     const a = document.createElement("a");
@@ -86,7 +83,6 @@ export default function CreaCalavera() {
     a.download = `${fileName}${format}`;
     a.click();
   }
-
 
   return (
     <Container fluid className="main">
@@ -100,14 +96,14 @@ export default function CreaCalavera() {
           <Container className="BtnContainer">
             <div style={{ display: 'contents' }}>
               <button 
-              className="button-effect draw meet"
-              variant="contained" 
-              size="small"
-              sx={{ borderRadius: '0px', minWidth: '0px' }}
-              onClick={() => {
-                download();
-              }}  >
-                Guardar Calavera
+                className="button-effect draw meet"
+                variant="contained" 
+                size="small"
+                sx={{ borderRadius: '0px', minWidth: '0px' }}
+                onClick={() => {
+                  download();
+                }}  >
+                  Guardar Calavera
               </button>
             </div>
           </Container>

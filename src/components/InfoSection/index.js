@@ -28,7 +28,7 @@ const InfoSection = ({
                 <h1 className={heading}>{headline}</h1>
                 <p className={text}>{description}</p>
                 <div className="BtnWrap">
-                  <ButtonEffect  text={buttonLabel} linkBtn={linkBtn}/>
+                  {/* <ButtonEffect  text={buttonLabel} linkBtn={linkBtn}/> */}
                 </div>
               </div>
             </div>

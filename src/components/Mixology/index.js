@@ -88,9 +88,9 @@ function Mixology() {
         </Col>
       </Row>
 
-      <div className="BtnWrap1">
+      {/* <div className="BtnWrap1">
         <ButtonEffect text="Ver Carta Completa" />
-      </div>
+      </div> */}
     </Container>
   );
 }

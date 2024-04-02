@@ -27,21 +27,14 @@ function HeroSection() {
         </div>
         <p className="HeroP">Sumérgete en la magia de Mictlán.</p>
         <Container>
-        <Row className="HeroBtnWrapper">
+        {/* <Row className="HeroBtnWrapper">
           <Col className="text-center">
             <ButtonEffect text="Ver Menú" /> 
           </Col>
           <Col className="text-center">
             <ButtonEffect text="Reservación" />
-          {/* <button 
-            class="draw meet button-effect" 
-            onMouseEnter={onHover2}
-            onMouseLeave={onHover2}
-            >
-            Reservación {hover2 ? <MdArrowForward className="ArrowForward"/> : <MdKeyboardArrowRight className="ArrowRight"/>}
-            </button> */}
           </Col>
-        </Row>
+        </Row> */}
         </Container>
       </div>
     </div>
