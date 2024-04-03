@@ -11,6 +11,8 @@ const InfoSection = ({
   topLine,
   headline,
   description,
+  description2,
+  description3,
   buttonLabel,
   img,
   alt,
@@ -27,6 +29,8 @@ const InfoSection = ({
                 <p className="TopLine">{topLine}</p>
                 <h1 className={heading}>{headline}</h1>
                 <p className={text}>{description}</p>
+                <p className={text}>{description2}</p>
+                <p className={text}>{description3}</p>
                 <div className="BtnWrap">
                   {/* <ButtonEffect  text={buttonLabel} linkBtn={linkBtn}/> */}
                 </div>
