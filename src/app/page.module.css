@@ -18,6 +18,10 @@
   font-family: var(--font-mono);
 }
 
+.rowcontainer2 {
+  height: 250px;
+}
+
 .description a {
   display: flex;
   justify-content: center;
