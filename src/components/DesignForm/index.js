@@ -5,8 +5,8 @@ export default function DesignsForm(props) {
   const { traits, handleInputChange, values } = props;
 
   const dtraits = {
-      "backgrounds": [1,2,3,4,5,6],
-      "bodies": [1,2,3,4,5,6,7,8,9],
+      "fondos": [1,2,3,4,5,6],
+      "calaveras": [1,2,3,4,5,6,7,8,9],
   };
 
   return (
