@@ -11,8 +11,7 @@ export default function ImgDisplay({imgObj}) {
         <ImagesSkull 
         imgObject={imgObj}
         controls={true}
-        size="100%"
-        viewJSON={true}/>}
+        size="100%"/>}
     </Container>
   );
 

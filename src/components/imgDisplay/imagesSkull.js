@@ -1,6 +1,6 @@
 import './imagesSkullElements.css';
 
-export default function Images({ imgObject, controls, size, viewJSON }) {
+export default function Images({ imgObject, size }) {
 
   const imgArray = Object.keys(imgObject)
   
