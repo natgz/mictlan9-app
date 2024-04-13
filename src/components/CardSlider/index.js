@@ -113,9 +113,9 @@ function CardSlider() {
         ))}
       </Slider>
 
-      {/* <div className="BtnWrap1">
+      <div className="BtnWrap1">
         <ButtonEffect text="Ver Nuestro Menú Completo" />
-      </div> */}
+      </div>
     </div>
   )
 }
