@@ -34,7 +34,7 @@ export const Reservaciones = {
   description2: "Contactanos dando CLICK en el icono de whatsapp y asegura tu lugar en nuestro Restaurante-Bar Mictlán9.",
   buttonLabel: "Reserva ahora mismo",
   wha: true,
-  linkBtn:"https://wa.me/8129397423",
+  linkBtn:"https://wa.me/8111832550",
   imgStart: false,
   img: "/images/reservation.webp",
   alt: "otro",

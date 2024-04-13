@@ -28,7 +28,7 @@ export default function Home() {
   };
 
   const whatsapp = () => {
-    window.open("https://wa.me/8129397423", "_blank")
+    window.open("https://wa.me/8111832550", "_blank")
   }
 
   return (

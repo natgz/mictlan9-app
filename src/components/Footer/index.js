@@ -49,7 +49,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="footerContacto">
-              <p>811 234 5678-numeroPrueba</p>
+              <p>Contactanos al +51 81 1183 2550 ó haz click en el icono de whatsapp.</p>
             </div>
           </Col>
 
