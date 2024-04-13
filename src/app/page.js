@@ -39,7 +39,7 @@ export default function Home() {
       <Gallery />
       <InfoSection {...Nosotros} />
       <CardSlider />
-      <Mixology />
+      {/* <Mixology /> */}
       <InfoSection {...Reservaciones} />
       <Location />
       <Footer />
